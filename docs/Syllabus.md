@@ -10,7 +10,7 @@
 Department of Environmental Sciences<br>
 _Office:_ ENR 230<br>
 _Email:_ xiaomeng.jin@rutgers.edu<br>
-_Office Hour:_: Friday, 1 – 2 PM
+_Office Hour:_ Friday, 1 – 2 PM
 
 ## Part 2: Overview 
 This course will introduce modern computing software, programming tools and best practices for open-source research that are transparent, accessible, reproducible and inclusive. <br> 
@@ -25,7 +25,7 @@ The course consists of three components: <br>
 **Computers:** Students can either bring their laptops or use the computers in ENR 323. Students will use Amarel, the university’s high performance computing cluster, to work on their assignments and final project. <br>   
 
 ## Part 4: Grading Policy
-#### Weekly Assignments (70%):<br> 
+#### Weekly Assignments (70%)<br> 
 •	Total: 100<br>
 •	All questions complete: 50<br>
 •	All questions correct: 30 <br>
@@ -33,7 +33,7 @@ The course consists of three components: <br>
 •	Clear comments and explanations: rate between 0 and 10 <br>
 •	Late penalty: -20 per day (24 hrs)<br>
 •	Lowest grade on an assignment will be dropped. <br>
-####  Final Project (30%):<br>
+####  Final Project (30%)<br>
 ** Part I: Individual Project (20%)** <br>
 The goal of the final project is to assess your ability to combine and apply the skills you have learned in class in the context of a real-world research problem. Our class has mostly focused on tools for data analysis and visualization, so this must be the focus of your final project. Specifically, we seek to assess your ability to do the following tasks: <br>
 •	Discover and download real datasets in standard formats (e.g. CSV, netCDF) <br>

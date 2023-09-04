@@ -6,9 +6,8 @@ nav:
   - Schedule: 'Schedule.md'
   - Lectures: 
     - Lecture 1: 'intro_to_python.ipynb'
-    - Lecture 2: 'Lecture_2.ipynb'
   - Assignments: 
-    - Assignment 1: 'Assignment_1.ipynb'
+    - Assignment 0: 'Assignment_0.md'
 
 plugins:
   - mkdocs-jupyter

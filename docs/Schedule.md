@@ -39,24 +39,3 @@
 
 
 <!-- 
-Part 4: Topic Outline and Schedule 
-Week 	Topics	Assignments	Assignment Due
-September 11	Introduction	Setting up an Amarel Account
-September 18	Intro to Git, Python Environment, Core Python Language	Assignment 1	Amarel Account 
-September 25	Core Python Language, Loops, Functions, Classes	Assignment 2	Assignment 1 Due
-October 2	Basic Python: Numpy and Matplotlib	Assignment 3	Assignment 2 Due
-October 9	Guest lecture: Introduction to Amarel	No Assignment 
-	Assignment 3 Due
-October 16	Python for Tabular Data: Basic Pandas	Assignment 4 	Final Project Topic Due
-October 23	Python for Tabular Data: Numerical Analysis	Assignment 5 	Assignment 4 Due
-October 30	Python for Multidimensional Data: Xarray	Assignment 6 	Assignment 5 Due
-
-November 6	Making Maps: Cartopy, GeoViews	Assignment 7	Assignment 6 Due
-
-November 13	Environmental Sciences Packages: GeoPandas, Re-gridding tools	Assignment 8	Assignment 7 Due
-
-November 20	Reproducible Research: Python Packaging, Binder, OpenDAP	Final Project	Assignment 8 Due
-November 27	Big Data: Parallel Computing, Dask, Submitting Jobs	Final Project	
-December 4	Big Data: Cloud Computing	Final Project	Final Project Part I Due
-December 11	No Class	Final Project	Final Project Part 2 Due
- -->
