@@ -1,11 +1,14 @@
 # Research Computing
 
-Fall 2023 | 16:107:606 Special Topics in Atmospheric Sciences
+**Fall 2023 | 16:107:606 Special Topics in Atmospheric Sciences** <br>
+**Research Computing in Atmospheric and Environmental Sciences** <br>
+**Rutgers University, Department of Environmental Sciences**
 
-Research Computing in Atmospheric and Environmental Sciences
- 
-Rutgers University, Department of Environmental Sciences
 
+<img src="image_class.png"
+     style="float: left; margin-right: 2px;" />
+     
+     
 <!-- 
 ## Syllabus
 

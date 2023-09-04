@@ -2,20 +2,20 @@
 
 | date       | topic                                             | Assignment        |
 |------------|---------------------------------------------------|-------------------|
-| September 11| Course introduction|                   |
-| September 18| Overview of Jupyter Notebook, Intro to Unix, Intro to Git, Core Python Language                              |   Amarel Account                |
-| September 25| Core Python Language, Loops, Functions, Classes| Assignment 1 due |
-| October 2  | Basic Python: Numpy and Matplotlib                             | Assignment 2 due   |
-| October 9  | Guest lecture: Introduction to Amarel                      | Assignment 3 due   |
-| October 16 | Python for Tabular Data: Basic Pandas    | Final Project Topic Due   |
-| October 23 | Python for Tabular Data: Numerical Analysis | Assignment 4 Due |
-| October 30 | Python for Multidimensional Data: Xarray | Assignment 5 Due  |
-| November 6 | Making Maps: Cartopy, GeoViews	Assignment 7 | Assignment 6 Due  |
-| November 13| Environmental Sciences Packages: GeoPandas, Re-gridding tools | Assignment 7 Due   |
-| November 20   | Reproducible Research: Python Packaging, Binder, OpenDAP                        | Assignment 8 Due                  |
-| November 27  | Big Data: Parallel Computing, Dask | No Assignment  |
-| December 4  | Big Data: Cloud Computing                                          |     Final Project Part I Due              |
-| December 11  | No Class                                               |      Final Project Part II Due             |
+| Sept 11| Course introduction|                   |
+| Sept 18| Overview of Jupyter Notebook, Intro to Unix, Intro to Git, Core Python Language                              |   Amarel Account                |
+| Sept 25| Core Python Language, Loops, Functions, Classes| Assignment 1 due |
+| Oct 2  | Basic Python: Numpy and Matplotlib                             | Assignment 2 due   |
+| Oct 9  | Guest lecture: Introduction to Amarel                      | Assignment 3 due   |
+| Oct 16 | Python for Tabular Data: Basic Pandas    | Final Project Topic Due   |
+| Oct 23 | Python for Tabular Data: Numerical Analysis | Assignment 4 Due |
+| Oct 30 | Python for Multidimensional Data: Xarray | Assignment 5 Due  |
+| Nov 6 | Making Maps: Cartopy | Assignment 6 Due  |
+| Nov 13| Environmental Sciences Packages: GeoPandas, Re-gridding tools | Assignment 7 Due   |
+| Nov 20   | Reproducible Research: Python Packaging, Binder, OpenDAP                        | Assignment 8 Due                  |
+| Nov 27  | Big Data: Parallel Computing, Dask | No Assignment  |
+| Dec 4  | Big Data: Cloud Computing                                          |     Final Project Part I Due              |
+| Dec 11  | No Class                                               |      Final Project Part II Due             |
 
 
 <!-- 
