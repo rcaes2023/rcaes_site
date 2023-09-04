@@ -1,0 +1,26 @@
+site_name: Research Computing in Atmospheric and Environmental Sciences
+
+nav:
+  - Home: 'index.md'
+  - Syllabus: 'Syllabus.md'
+  - Schedule: 'Schedule.md'
+  - Lectures: 
+    - Lecture 1: 'intro_to_python.ipynb'
+    - Lecture 2: 'Lecture_2.ipynb'
+  - Assignments: 
+    - Assignment 1: 'Assignment_1.ipynb'
+
+plugins:
+  - mkdocs-jupyter
+  - search
+
+theme:
+  name: material
+  palette:
+    primary: blue grey
+  font:
+    text: Open Sans
+  logo: assets/logo.png
+  features:
+    - search.highlight
+copyright: © 2023 Xiaomeng Jin 
