@@ -13,11 +13,11 @@ _Email:_ xiaomeng.jin@rutgers.edu<br>
 _Office Hour:_ Friday, 1 – 2 PM
 
 ## Part 2: Overview 
-This course will introduce modern computing software, programming tools and best practices for open-source research that are transparent, accessible, reproducible and inclusive. <br> 
-The course consists of three components: <br> 
+This course will introduce modern computing software, programming tools and best practices for open-source research that are transparent, accessible, reproducible and inclusive. The course consists of three components: <br> 
 (1) Introduction to programming in the open-source Python language and in-depth exploration of the numerical analysis and visualization packages that comprise the modern scientific Python ecosystem;<br> 
 (2) Introduction to the concept of open science and best practices for conducting open-source research; <br> 
-(3) Introduction to cloud and parallel computing for big data analysis. The course is designed to be accessible for graduate students in atmospheric science, environmental sciences or other disciplines in earth sciences. Student learning will be facilitated through a combination of lectures, in-class exercises, homework assignments and class projects.
+(3) Introduction to cloud and parallel computing for big data analysis. The course is designed to be accessible for graduate students in atmospheric science, environmental sciences or other disciplines in earth sciences. <br>
+Student learning will be facilitated through a combination of lectures, in-class exercises, homework assignments and class projects.
 
 ## Part 3: Course Structure
 **Format:** The instructor will present new materials in the first half of the lecture. The second half of the class will be flipped: students will work first in small groups and then individually on assignments. <br> 
