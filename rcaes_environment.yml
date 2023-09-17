@@ -1,0 +1,17 @@
+name: rcaes_scipy
+channels:
+    - conda-forge
+    - defaults
+dependencies:
+    - python=3.9    # Python
+    - pandas        # Labeled array library
+    - xarray        # N-d labeled array library
+    - cartopy       # Geographic plotting toolkit
+    - dask          # Parallel processing library
+    - ipython       # IPython interpreter and tools
+    - jupyter       # Jupyter federation architecture
+    - jupyterlab    # Jupyter Lab environment
+    - matplotlib    # 2D plotting library
+    - numpy         # N-d array and numerics
+    - scipy         # Common math/stats/science functions
+    - gh            # github CLI, a command-line interface to GitHub for use in your terminal or your scripts
