@@ -7,19 +7,21 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
+        <meta name="author" content="Xiaomeng Jin">
       
       
-        <link rel="prev" href="../Lecture_2_intro_to_unix/">
+      
+        <link rel="prev" href="../Lecture_2_Core_Python/">
       
       
-        <link rel="next" href="../Lecture_2_Core_Python/">
+        <link rel="next" href="../Lecture_3_functions_classes_modules/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.19">
     
     
       
-        <title>Lecture 2 Install Python Environment - Research Computing in Atmospheric and Environmental Sciences</title>
+        <title>Intro to GitHub CLI - Research Computing in Atmospheric and Environmental Sciences</title>
       
     
     
@@ -67,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#install-conda-and-python" class="md-skip">
+        <a href="#summary-of-useful-git-commands" class="md-skip">
           Skip to content
         </a>
       
@@ -101,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Lecture 2 Install Python Environment
+              Intro to GitHub CLI
             
           </span>
         </div>
@@ -288,21 +290,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../Lecture_2_install_python_amarel/" class="md-nav__link">
         Lecture 2 Install Python Environment
       </a>
-      
     </li>
   
 
@@ -326,11 +318,87 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../Lecture_3_GitHub/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Lecture 3 Git
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Lecture 3 Git
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configuring" class="md-nav__link">
+    Configuring:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#branches" class="md-nav__link">
+    Branches:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-repositories" class="md-nav__link">
+    Create repositories:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#make-changes" class="md-nav__link">
+    Make Changes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#synchronize-changes" class="md-nav__link">
+    Synchronize changes:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-github-workflow" class="md-nav__link">
+    Basic GitHub workflow:
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -453,6 +521,56 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configuring" class="md-nav__link">
+    Configuring:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#branches" class="md-nav__link">
+    Branches:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-repositories" class="md-nav__link">
+    Create repositories:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#make-changes" class="md-nav__link">
+    Make Changes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#synchronize-changes" class="md-nav__link">
+    Synchronize changes:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-github-workflow" class="md-nav__link">
+    Basic GitHub workflow:
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -466,83 +584,55 @@
                   
 
 
-<h1 id="install-conda-and-python">Install Conda and Python</h1>
-<ul>
-<li>Connect to <a href="https://ondemand.hpc.rutgers.edu/">Amarel Open OnDemand</a> <br></li>
-<li>Click Clusters <br></li>
-<li>Choose Amarel Cluster Shell Access <br></li>
-<li>Enter your password <br></li>
-<li>In the terminal, do the following commands (one line each time). If you're using Windows, type 'Ctrl+c' to copy and 'Ctrl+Shift+v' to paste command. <br></li>
-</ul>
-<pre><code>$ module use /projects/community/modulefiles
-$ module load anaconda/2020.07-gc563
-$ cd
-$ source .bashrc
-$ mkdir -p .conda/pkgs/cache .conda/envs 
+<h1 id="summary-of-useful-git-commands">Summary of useful Git commands</h1>
+<h2 id="configuring">Configuring:</h2>
+<p>Set up your username and email</p>
+<pre><code>git config --global user.name &quot;Xiaomeng Jin&quot;
+git config --global user.email &quot;xiaomeng.jin@rutgers.edu&quot;
 </code></pre>
-<ul>
-<li>Test if conda is successfully installed: </li>
-</ul>
-<pre><code>$ which conda
+<h2 id="branches">Branches:</h2>
+<p>Branches are an important part of working with Git. 
+Any commits you make will be made on the branch you're currently “checked out” to. Use git status to see which branch that is.</p>
+<pre><code>git branch [branch-name] #creates a new branch
+git checkout [branch-name] # switch to the specified branch and updates the working directory
+git merge [branch] # combines the specified branch's history into the current branch.
+git branch -d [branch-name] #deletes the specified branch
 </code></pre>
-<ul>
-<li>Install a conda environment called 'rcaes_env': </li>
-</ul>
-<!-- 
-
-<pre><code>$ wget https://github.com/rcaes2023/rcaes_site/blob/gh-pages/rcaes_environment.yml
-$ conda env create -f rcaes_environment.yml
+<h2 id="create-repositories">Create repositories:</h2>
+<p>Start out a new repository:</p>
+<pre><code>cd my_project
+git init      
 </code></pre>
-
- -->
-
-<pre><code>$ conda create -n rcaes_env
+<p>Or clone a repository using git clone</p>
+<pre><code>git clone https://github.com/rcaes2023/assignment_1_python-MazvitaChikomo.git
 </code></pre>
-<ul>
-<li>Enter Y to proceed. Wait until you see the following. It may take a while. </li>
-</ul>
-<pre><code>#                                                                                                                                                               
-# To activate this environment, use                                                                                                                             
-#                                                                                                                                                               
-#     $ conda activate rcaes_env                                                                                                                              
-#                                                                                                                                                               
-# To deactivate an active environment, use                                                                                                                      
-#                                                                                                                                                               
-#     $ conda deactivate    
+<p>Or clone a repository using GitHub Command Line OWNER/REPO syntax.</p>
+<pre><code>gh repo clone rcaes2023/assignment_1_python-MazvitaChikomo
+cd assignment_1_python-MazvitaChikomo
 </code></pre>
-<ul>
-<li>Now let's activate the environment:</li>
-</ul>
-<pre><code>$ conda activate rcaes_env 
+<p>If you want to get a repository that you don't have permission to push to, you can fork the repository.</p>
+<pre><code>gh repo fork cli/cli
 </code></pre>
-<ul>
-<li>First, let's install essential packages</li>
-</ul>
-<pre><code>conda install -c conda-forge python=3.9 jupyter jupyterlab notebook numpy scipy ipython
+<h2 id="make-changes">Make Changes</h2>
+<p>Browse and inspect the evolution of project files</p>
+<pre><code>git status    # tells you which branch you are at, what files are staged, which ones have been modified, are new,...
+git log       # view the commit log
+git diff      # view file content differences
 </code></pre>
-<ul>
-<li>Next, let's install github CLI, a command-line interface to GitHub for use in your terminal or your scripts</li>
-</ul>
-<pre><code>conda install -c conda-forge gh
+<p>Version control</p>
+<pre><code>git add &lt;filenames&gt;  #Snapshots the file in preparation for versioning
+git commit -m &quot;your brief commit message goes here&quot; #Records file snapshots permanently in version history
 </code></pre>
-<ul>
-<li>
-<p>Next, go back to Amarel Open OnDemand. This time, we will launch a personal jupyter. Click on 'Interactive Apps', choose 'Personal Jupyter'. <br></p>
-</li>
-<li>
-<p>Settings for Personal Jupyter: <br></p>
-</li>
-</ul>
-<pre><code>    Number of hours: 10 
-    Number of cores: 1 
-    Gigabytes of memory: 10 
-    Partition: main
-    Leave Reservation and slurm feature blank 
-    conda path: /projects/community/anaconda/2020.07/gc563 
-    conda environment: rcaes_env
+<h2 id="synchronize-changes">Synchronize changes:</h2>
+<pre><code>git push #uploads all local branch commits to GitHub
+git pull # updates your current local working branch with all new commits from the corresponding remote branch on GitHub.
 </code></pre>
+<h2 id="basic-github-workflow">Basic GitHub workflow:</h2>
 <ul>
-<li>To install Conda on your laptop, I recommend using <a href="https://docs.conda.io/projects/miniconda/en/latest/">Miniconda</a></li>
+<li>clone your local repo with <code>gh repo clone &lt;REPO&gt;</code>,</li>
+<li>make your changes and stage them with <code>git add &lt;filenames&gt;</code>,</li>
+<li>commit your changes with <code>git commit -m "your brief commit message goes here"</code>, and</li>
+<li>upload the changes to GitHub with<code>git push</code></li>
 </ul>
 
 
