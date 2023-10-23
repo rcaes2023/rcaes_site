@@ -2165,8 +2165,8 @@ from matplotlib import pyplot as plt</div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=ee0007a2-2365-461b-94a3-b118f481988a">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=8f25a0ca-9c30-456e-b211-0f8e15e8ee41">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -2184,9 +2184,36 @@ from matplotlib import pyplot as plt</div>
 </div>
 </clipboard-copy>
 </div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">'FOD_ID'</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-5">df = df.set_index('FOD_ID')</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=ee0007a2-2365-461b-94a3-b118f481988a">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-6">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df</span><span class="p">[[</span><span class="s1">'DISCOVERY_DATE'</span><span class="p">,</span><span class="s1">'DISCOVERY_DOY'</span><span class="p">,</span><span class="s1">'DISCOVERY_TIME'</span> <span class="p">]]</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-5">df[['DISCOVERY_DATE','DISCOVERY_DOY','DISCOVERY_TIME' ]]</div>
+<div class="clipboard-copy-txt" id="cell-6">df[['DISCOVERY_DATE','DISCOVERY_DOY','DISCOVERY_TIME' ]]</div>
 </div>
 </div>
 </div>
@@ -2196,7 +2223,7 @@ from matplotlib import pyplot as plt</div>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 <div>
 <style scoped="">
@@ -2220,34 +2247,40 @@ from matplotlib import pyplot as plt</div>
 <th>DISCOVERY_DOY</th>
 <th>DISCOVERY_TIME</th>
 </tr>
+<tr>
+<th>FOD_ID</th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
 </thead>
 <tbody>
 <tr>
-<th>0</th>
+<th>17</th>
 <td>2004-10-06</td>
 <td>280</td>
 <td>1415.0</td>
 </tr>
 <tr>
-<th>1</th>
+<th>18</th>
 <td>2004-10-13</td>
 <td>287</td>
 <td>1618.0</td>
 </tr>
 <tr>
-<th>2</th>
+<th>40</th>
 <td>2005-02-12</td>
 <td>43</td>
 <td>1520.0</td>
 </tr>
 <tr>
-<th>3</th>
+<th>119</th>
 <td>2005-07-16</td>
 <td>197</td>
 <td>1715.0</td>
 </tr>
 <tr>
-<th>4</th>
+<th>120</th>
 <td>2005-07-16</td>
 <td>197</td>
 <td>1730.0</td>
@@ -2259,31 +2292,31 @@ from matplotlib import pyplot as plt</div>
 <td>...</td>
 </tr>
 <tr>
-<th>60708</th>
+<th>400732975</th>
 <td>2019-08-09</td>
 <td>221</td>
 <td>2134.0</td>
 </tr>
 <tr>
-<th>60709</th>
+<th>400732976</th>
 <td>2020-03-01</td>
 <td>61</td>
 <td>1330.0</td>
 </tr>
 <tr>
-<th>60710</th>
+<th>400732977</th>
 <td>2020-05-13</td>
 <td>134</td>
 <td>1300.0</td>
 </tr>
 <tr>
-<th>60711</th>
+<th>400732982</th>
 <td>2020-08-17</td>
 <td>230</td>
 <td>755.0</td>
 </tr>
 <tr>
-<th>60712</th>
+<th>400732984</th>
 <td>2020-11-20</td>
 <td>325</td>
 <td>1110.0</td>
@@ -2291,6 +2324,378 @@ from matplotlib import pyplot as plt</div>
 </tbody>
 </table>
 <p>60713 rows × 3 columns</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=c04466ef-76f1-43ab-9973-b12448c923c3">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-7">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-7">df</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>FPA_ID</th>
+<th>SOURCE_SYSTEM_TYPE</th>
+<th>SOURCE_SYSTEM</th>
+<th>NWCG_REPORTING_UNIT_ID</th>
+<th>NWCG_REPORTING_UNIT_NAME</th>
+<th>FIRE_CODE</th>
+<th>FIRE_NAME</th>
+<th>MTBS_FIRE_NAME</th>
+<th>COMPLEX_NAME</th>
+<th>FIRE_YEAR</th>
+<th>...</th>
+<th>CONT_DOY</th>
+<th>FIRE_SIZE</th>
+<th>FIRE_SIZE_CLASS</th>
+<th>LATITUDE</th>
+<th>LONGITUDE</th>
+<th>OWNER_DESCR</th>
+<th>STATE</th>
+<th>COUNTY</th>
+<th>FIPS_CODE</th>
+<th>FIPS_NAME</th>
+</tr>
+<tr>
+<th>FOD_ID</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>17</th>
+<td>FS-1418878</td>
+<td>FED</td>
+<td>FS-FIRESTAT</td>
+<td>USCAENF</td>
+<td>Eldorado National Forest</td>
+<td>NaN</td>
+<td>POWER</td>
+<td>POWER</td>
+<td>NaN</td>
+<td>2004</td>
+<td>...</td>
+<td>295.0</td>
+<td>16823.0</td>
+<td>G</td>
+<td>38.523333</td>
+<td>-120.211667</td>
+<td>USFS</td>
+<td>CA</td>
+<td>5</td>
+<td>6005.0</td>
+<td>Amador County</td>
+</tr>
+<tr>
+<th>18</th>
+<td>FS-1418881</td>
+<td>FED</td>
+<td>FS-FIRESTAT</td>
+<td>USCAENF</td>
+<td>Eldorado National Forest</td>
+<td>BHA3</td>
+<td>FREDS</td>
+<td>FREDS</td>
+<td>NaN</td>
+<td>2004</td>
+<td>...</td>
+<td>291.0</td>
+<td>7700.0</td>
+<td>G</td>
+<td>38.780000</td>
+<td>-120.260000</td>
+<td>USFS</td>
+<td>CA</td>
+<td>17</td>
+<td>6017.0</td>
+<td>El Dorado County</td>
+</tr>
+<tr>
+<th>40</th>
+<td>FS-1418920</td>
+<td>FED</td>
+<td>FS-FIRESTAT</td>
+<td>USNCNCF</td>
+<td>National Forests in North Carolina</td>
+<td>BKC8</td>
+<td>AUSTIN CREEK</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>2005</td>
+<td>...</td>
+<td>44.0</td>
+<td>125.0</td>
+<td>D</td>
+<td>36.001667</td>
+<td>-81.590000</td>
+<td>MISSING/NOT SPECIFIED</td>
+<td>NC</td>
+<td>27</td>
+<td>37027.0</td>
+<td>Caldwell County</td>
+</tr>
+<tr>
+<th>119</th>
+<td>FS-1419153</td>
+<td>FED</td>
+<td>FS-FIRESTAT</td>
+<td>USNENBF</td>
+<td>Nebraska National Forest</td>
+<td>BEW8</td>
+<td>THOMPSON BUTTE</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>2005</td>
+<td>...</td>
+<td>198.0</td>
+<td>119.0</td>
+<td>D</td>
+<td>43.899167</td>
+<td>-102.954722</td>
+<td>USFS</td>
+<td>SD</td>
+<td>103</td>
+<td>46103.0</td>
+<td>Pennington County</td>
+</tr>
+<tr>
+<th>120</th>
+<td>FS-1419156</td>
+<td>FED</td>
+<td>FS-FIRESTAT</td>
+<td>USNENBF</td>
+<td>Nebraska National Forest</td>
+<td>BEW8</td>
+<td>CHARLES DRAW</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>2005</td>
+<td>...</td>
+<td>197.0</td>
+<td>119.0</td>
+<td>D</td>
+<td>43.892778</td>
+<td>-102.948056</td>
+<td>USFS</td>
+<td>SD</td>
+<td>103</td>
+<td>46103.0</td>
+<td>Pennington County</td>
+</tr>
+<tr>
+<th>...</th>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<th>400732975</th>
+<td>ICS209_2019_10805427</td>
+<td>INTERAGCY</td>
+<td>IA-ICS209</td>
+<td>USORMAF</td>
+<td>Malheur National Forest</td>
+<td>MMY5</td>
+<td>204 COW</td>
+<td>204 COW</td>
+<td>NaN</td>
+<td>2019</td>
+<td>...</td>
+<td>NaN</td>
+<td>9668.0</td>
+<td>G</td>
+<td>44.285050</td>
+<td>-118.459800</td>
+<td>USFS</td>
+<td>OR</td>
+<td>Baker</td>
+<td>41001.0</td>
+<td>Baker County</td>
+</tr>
+<tr>
+<th>400732976</th>
+<td>ICS209_2020_11699713</td>
+<td>INTERAGCY</td>
+<td>IA-ICS209</td>
+<td>USOKCNA</td>
+<td>Cherokee Nation Tribe</td>
+<td>NaN</td>
+<td>CAMERA</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>2020</td>
+<td>...</td>
+<td>NaN</td>
+<td>401.0</td>
+<td>E</td>
+<td>36.303830</td>
+<td>-94.903820</td>
+<td>UNDEFINED FEDERAL</td>
+<td>OK</td>
+<td>Delaware</td>
+<td>40041.0</td>
+<td>Delaware County</td>
+</tr>
+<tr>
+<th>400732977</th>
+<td>ICS209_2020_11703752</td>
+<td>INTERAGCY</td>
+<td>IA-ICS209</td>
+<td>USFLFLS</td>
+<td>Florida Forest Service</td>
+<td>NaN</td>
+<td>22ND AVE SE</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>2020</td>
+<td>...</td>
+<td>NaN</td>
+<td>1000.0</td>
+<td>F</td>
+<td>26.191111</td>
+<td>-81.523889</td>
+<td>Private</td>
+<td>FL</td>
+<td>Collier</td>
+<td>12021.0</td>
+<td>Collier County</td>
+</tr>
+<tr>
+<th>400732982</th>
+<td>ICS209_2020_11831809</td>
+<td>INTERAGCY</td>
+<td>IA-ICS209</td>
+<td>USWAMCR</td>
+<td>Mid Columbia National Wildlife Refuge Complex</td>
+<td>NaN</td>
+<td>TAYLOR POND</td>
+<td>TAYLOR POND</td>
+<td>NaN</td>
+<td>2020</td>
+<td>...</td>
+<td>233.0</td>
+<td>24892.0</td>
+<td>G</td>
+<td>46.670340</td>
+<td>-120.114500</td>
+<td>UNDEFINED FEDERAL</td>
+<td>WA</td>
+<td>Yakima</td>
+<td>53077.0</td>
+<td>Yakima County</td>
+</tr>
+<tr>
+<th>400732984</th>
+<td>ICS209_2020_11977822</td>
+<td>INTERAGCY</td>
+<td>IA-ICS209</td>
+<td>USVAVAF</td>
+<td>George Washington &amp; Jefferson National Forests</td>
+<td>NaN</td>
+<td>MIDDLE MOUNTAIN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>2020</td>
+<td>...</td>
+<td>327.0</td>
+<td>105.0</td>
+<td>D</td>
+<td>38.578900</td>
+<td>-79.148450</td>
+<td>UNDEFINED FEDERAL</td>
+<td>VA</td>
+<td>Rockingham</td>
+<td>51165.0</td>
+<td>Rockingham County</td>
+</tr>
+</tbody>
+</table>
+<p>60713 rows × 27 columns</p>
 </div>
 </div>
 </div>
@@ -2315,10 +2720,10 @@ from matplotlib import pyplot as plt</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-6">
+<clipboard-copy for="cell-8">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -2328,9 +2733,9 @@ from matplotlib import pyplot as plt</div>
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'STATE'</span><span class="p">)</span><span class="o">.</span><span class="n">FOD_ID</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">nlargest</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">'bar'</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'STATE'</span><span class="p">)</span><span class="o">.</span><span class="n">FPA_ID</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">nlargest</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">'bar'</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-6">df.groupby('STATE').FOD_ID.count().nlargest(10).plot(kind='bar', figsize=(12,6))</div>
+<div class="clipboard-copy-txt" id="cell-8">df.groupby('STATE').FPA_ID.count().nlargest(10).plot(kind='bar', figsize=(12,6))</div>
 </div>
 </div>
 </div>
@@ -2340,7 +2745,7 @@ from matplotlib import pyplot as plt</div>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
 <pre>&lt;Axes: xlabel='STATE'&gt;</pre>
 </div>
@@ -2395,10 +2800,10 @@ from matplotlib import pyplot as plt</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-7">
+<clipboard-copy for="cell-9">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -2410,7 +2815,7 @@ from matplotlib import pyplot as plt</div>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">STATE</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-7">df.groupby(df.STATE)</div>
+<div class="clipboard-copy-txt" id="cell-9">df.groupby(df.STATE)</div>
 </div>
 </div>
 </div>
@@ -2420,9 +2825,9 @@ from matplotlib import pyplot as plt</div>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&lt;pandas.core.groupby.generic.DataFrameGroupBy object at 0x17f717160&gt;</pre>
+<pre>&lt;pandas.core.groupby.generic.DataFrameGroupBy object at 0x181dc4a30&gt;</pre>
 </div>
 </div>
 </div>
@@ -2445,10 +2850,10 @@ from matplotlib import pyplot as plt</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-8">
+<clipboard-copy for="cell-10">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -2460,7 +2865,7 @@ from matplotlib import pyplot as plt</div>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'STATE'</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-8">df.groupby('STATE')</div>
+<div class="clipboard-copy-txt" id="cell-10">df.groupby('STATE')</div>
 </div>
 </div>
 </div>
@@ -2470,36 +2875,9 @@ from matplotlib import pyplot as plt</div>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&lt;pandas.core.groupby.generic.DataFrameGroupBy object at 0x17f659700&gt;</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=8f25a0ca-9c30-456e-b211-0f8e15e8ee41">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy for="cell-9">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">'FOD_ID'</span><span class="p">)</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-9">df = df.set_index('FOD_ID')</div>
+<pre>&lt;pandas.core.groupby.generic.DataFrameGroupBy object at 0x181dc4ac0&gt;</pre>
 </div>
 </div>
 </div>
@@ -2522,10 +2900,10 @@ from matplotlib import pyplot as plt</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-10">
+<clipboard-copy for="cell-11">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -2538,7 +2916,7 @@ from matplotlib import pyplot as plt</div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">gb</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'STATE'</span><span class="p">)</span>
 <span class="n">gb</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-10">gb = df.groupby('STATE')
+<div class="clipboard-copy-txt" id="cell-11">gb = df.groupby('STATE')
 gb</div>
 </div>
 </div>
@@ -2549,9 +2927,9 @@ gb</div>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&lt;pandas.core.groupby.generic.DataFrameGroupBy object at 0x17f7252e0&gt;</pre>
+<pre>&lt;pandas.core.groupby.generic.DataFrameGroupBy object at 0x18128ba90&gt;</pre>
 </div>
 </div>
 </div>
@@ -2574,10 +2952,10 @@ gb</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-11">
+<clipboard-copy for="cell-12">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -2589,7 +2967,7 @@ gb</div>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">gb</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-11">len(gb)</div>
+<div class="clipboard-copy-txt" id="cell-12">len(gb)</div>
 </div>
 </div>
 </div>
@@ -2599,7 +2977,7 @@ gb</div>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
 <pre>50</pre>
 </div>
@@ -2624,10 +3002,10 @@ gb</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-12">
+<clipboard-copy for="cell-13">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -2640,7 +3018,7 @@ gb</div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">groups</span> <span class="o">=</span> <span class="n">gb</span><span class="o">.</span><span class="n">groups</span>
 <span class="nb">len</span><span class="p">(</span><span class="n">groups</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-12">groups = gb.groups
+<div class="clipboard-copy-txt" id="cell-13">groups = gb.groups
 len(groups)</div>
 </div>
 </div>
@@ -2651,7 +3029,7 @@ len(groups)</div>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
 <pre>50</pre>
 </div>
@@ -2665,10 +3043,10 @@ len(groups)</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-13">
+<clipboard-copy for="cell-14">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -2680,7 +3058,7 @@ len(groups)</div>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="nb">list</span><span class="p">(</span><span class="n">groups</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-13">list(groups.keys())</div>
+<div class="clipboard-copy-txt" id="cell-14">list(groups.keys())</div>
 </div>
 </div>
 </div>
@@ -2690,7 +3068,7 @@ len(groups)</div>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
 <pre>['AK',
  'AL',
@@ -2764,10 +3142,10 @@ len(groups)</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-14">
+<clipboard-copy for="cell-15">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -2782,7 +3160,7 @@ len(groups)</div>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'The key is "</span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s1">"'</span><span class="p">)</span>
     <span class="k">break</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-14">for key, group in gb:
+<div class="clipboard-copy-txt" id="cell-15">for key, group in gb:
     display(group.head())
     print(f'The key is "{key}"')
     break</div>
@@ -3016,10 +3394,10 @@ len(groups)</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-15">
+<clipboard-copy for="cell-16">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -3031,7 +3409,7 @@ len(groups)</div>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">gb</span><span class="o">.</span><span class="n">get_group</span><span class="p">(</span><span class="s1">'NJ'</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-15">gb.get_group('NJ')</div>
+<div class="clipboard-copy-txt" id="cell-16">gb.get_group('NJ')</div>
 </div>
 </div>
 </div>
@@ -3041,7 +3419,7 @@ len(groups)</div>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 <div>
 <style scoped="">
@@ -3391,7 +3769,7 @@ len(groups)</div>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-16">
+<clipboard-copy for="cell-17">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -3403,7 +3781,7 @@ len(groups)</div>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-16"></div>
+<div class="clipboard-copy-txt" id="cell-17"></div>
 </div>
 </div>
 </div>
@@ -3441,7 +3819,7 @@ len(groups)</div>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-17">
+<clipboard-copy for="cell-18">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -3453,7 +3831,7 @@ len(groups)</div>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-17"></div>
+<div class="clipboard-copy-txt" id="cell-18"></div>
 </div>
 </div>
 </div>
@@ -3465,10 +3843,10 @@ len(groups)</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-18">
+<clipboard-copy for="cell-19">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -3481,7 +3859,7 @@ len(groups)</div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Find out the biggest fire size in each state. </span>
 <span class="n">gb</span><span class="o">.</span><span class="n">FIRE_SIZE</span><span class="o">.</span><span class="n">aggregate</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-18"># Find out the biggest fire size in each state. 
+<div class="clipboard-copy-txt" id="cell-19"># Find out the biggest fire size in each state. 
 gb.FIRE_SIZE.aggregate(np.max)</div>
 </div>
 </div>
@@ -3492,7 +3870,7 @@ gb.FIRE_SIZE.aggregate(np.max)</div>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
 <pre>STATE
 AK    606945.0
@@ -3557,10 +3935,10 @@ Name: FIRE_SIZE, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-19">
+<clipboard-copy for="cell-20">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -3572,7 +3950,7 @@ Name: FIRE_SIZE, dtype: float64</pre>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">gb</span><span class="o">.</span><span class="n">max</span><span class="p">(</span> <span class="n">numeric_only</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-19">gb.max( numeric_only=True)</div>
+<div class="clipboard-copy-txt" id="cell-20">gb.max( numeric_only=True)</div>
 </div>
 </div>
 </div>
@@ -3582,7 +3960,7 @@ Name: FIRE_SIZE, dtype: float64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[19]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 <div>
 <style scoped="">
@@ -4188,10 +4566,10 @@ Name: FIRE_SIZE, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-20">
+<clipboard-copy for="cell-21">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -4203,7 +4581,7 @@ Name: FIRE_SIZE, dtype: float64</pre>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">gb</span><span class="o">.</span><span class="n">FIRE_SIZE</span><span class="o">.</span><span class="n">aggregate</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">)</span><span class="o">.</span><span class="n">nlargest</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-20">gb.FIRE_SIZE.aggregate(np.max).nlargest(10)</div>
+<div class="clipboard-copy-txt" id="cell-21">gb.FIRE_SIZE.aggregate(np.max).nlargest(10)</div>
 </div>
 </div>
 </div>
@@ -4213,7 +4591,7 @@ Name: FIRE_SIZE, dtype: float64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[19]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
 <pre>STATE
 OK    662700.0
@@ -4249,10 +4627,10 @@ Name: FIRE_SIZE, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-21">
+<clipboard-copy for="cell-22">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -4264,7 +4642,7 @@ Name: FIRE_SIZE, dtype: float64</pre>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">gb</span><span class="o">.</span><span class="n">FIRE_SIZE</span><span class="o">.</span><span class="n">max</span><span class="p">()</span><span class="o">.</span><span class="n">nlargest</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-21">gb.FIRE_SIZE.max().nlargest(10)</div>
+<div class="clipboard-copy-txt" id="cell-22">gb.FIRE_SIZE.max().nlargest(10)</div>
 </div>
 </div>
 </div>
@@ -4274,7 +4652,7 @@ Name: FIRE_SIZE, dtype: float64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[21]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
 <pre>STATE
 OK    662700.0
@@ -4302,7 +4680,7 @@ Name: FIRE_SIZE, dtype: float64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-22">
+<clipboard-copy for="cell-23">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -4314,7 +4692,7 @@ Name: FIRE_SIZE, dtype: float64</pre>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">gb</span><span class="o">.</span><span class="n">FIRE_SIZE</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">nlargest</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-22">gb.FIRE_SIZE.mean().nlargest(10)</div>
+<div class="clipboard-copy-txt" id="cell-23">gb.FIRE_SIZE.mean().nlargest(10)</div>
 </div>
 </div>
 </div>
@@ -4363,7 +4741,7 @@ Name: FIRE_SIZE, dtype: float64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-23">
+<clipboard-copy for="cell-24">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -4375,7 +4753,7 @@ Name: FIRE_SIZE, dtype: float64</pre>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">gb</span><span class="o">.</span><span class="n">FIRE_SIZE</span><span class="o">.</span><span class="n">aggregate</span><span class="p">([</span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">])</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-23">gb.FIRE_SIZE.aggregate([np.max, np.mean])</div>
+<div class="clipboard-copy-txt" id="cell-24">gb.FIRE_SIZE.aggregate([np.max, np.mean])</div>
 </div>
 </div>
 </div>
@@ -4682,7 +5060,7 @@ Name: FIRE_SIZE, dtype: float64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-24">
+<clipboard-copy for="cell-25">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -4694,7 +5072,7 @@ Name: FIRE_SIZE, dtype: float64</pre>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">gb</span><span class="o">.</span><span class="n">FIRE_SIZE</span><span class="o">.</span><span class="n">aggregate</span><span class="p">([</span><span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">])</span><span class="o">.</span><span class="n">nlargest</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="s1">'mean'</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">'bar'</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-24">gb.FIRE_SIZE.aggregate([np.median, np.mean]).nlargest(10, 'mean').plot(kind='bar')</div>
+<div class="clipboard-copy-txt" id="cell-25">gb.FIRE_SIZE.aggregate([np.median, np.mean]).nlargest(10, 'mean').plot(kind='bar')</div>
 </div>
 </div>
 </div>
@@ -4727,7 +5105,7 @@ Name: FIRE_SIZE, dtype: float64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-25">
+<clipboard-copy for="cell-26">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -4739,7 +5117,7 @@ Name: FIRE_SIZE, dtype: float64</pre>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">columns</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-25">df.columns</div>
+<div class="clipboard-copy-txt" id="cell-26">df.columns</div>
 </div>
 </div>
 </div>
@@ -4774,7 +5152,7 @@ Name: FIRE_SIZE, dtype: float64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-26">
+<clipboard-copy for="cell-27">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -4786,7 +5164,7 @@ Name: FIRE_SIZE, dtype: float64</pre>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">'NWCG_CAUSE_CLASSIFICATION'</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-26">df['NWCG_CAUSE_CLASSIFICATION'].unique()</div>
+<div class="clipboard-copy-txt" id="cell-27">df['NWCG_CAUSE_CLASSIFICATION'].unique()</div>
 </div>
 </div>
 </div>
@@ -4814,7 +5192,7 @@ Name: FIRE_SIZE, dtype: float64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-27">
+<clipboard-copy for="cell-28">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -4826,7 +5204,7 @@ Name: FIRE_SIZE, dtype: float64</pre>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'NWCG_GENERAL_CAUSE'</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="s1">'FPA_ID'</span><span class="p">]</span><span class="o">.</span><span class="n">nlargest</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span> <span class="o">=</span> <span class="s1">'bar'</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-27">df.groupby('NWCG_GENERAL_CAUSE').count()['FPA_ID'].nlargest(10).plot(kind = 'bar')</div>
+<div class="clipboard-copy-txt" id="cell-28">df.groupby('NWCG_GENERAL_CAUSE').count()['FPA_ID'].nlargest(10).plot(kind = 'bar')</div>
 </div>
 </div>
 </div>
@@ -4856,10 +5234,10 @@ Name: FIRE_SIZE, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-28">
+<clipboard-copy for="cell-29">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -4871,7 +5249,7 @@ Name: FIRE_SIZE, dtype: float64</pre>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'NWCG_CAUSE_CLASSIFICATION'</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="s1">'FPA_ID'</span><span class="p">]</span><span class="o">.</span><span class="n">nlargest</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span> <span class="o">=</span> <span class="s1">'bar'</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-28">df.groupby('NWCG_CAUSE_CLASSIFICATION').count()['FPA_ID'].nlargest().plot(kind = 'bar')</div>
+<div class="clipboard-copy-txt" id="cell-29">df.groupby('NWCG_CAUSE_CLASSIFICATION').count()['FPA_ID'].nlargest().plot(kind = 'bar')</div>
 </div>
 </div>
 </div>
@@ -4881,7 +5259,7 @@ Name: FIRE_SIZE, dtype: float64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[29]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[28]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
 <pre>&lt;Axes: xlabel='NWCG_CAUSE_CLASSIFICATION'&gt;</pre>
 </div>
@@ -4901,10 +5279,10 @@ Name: FIRE_SIZE, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [31]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-29">
+<clipboard-copy for="cell-30">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -4916,7 +5294,7 @@ Name: FIRE_SIZE, dtype: float64</pre>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'FIRE_YEAR'</span><span class="p">)</span><span class="o">.</span><span class="n">FPA_ID</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-29">df.groupby('FIRE_YEAR').FPA_ID.count().plot()</div>
+<div class="clipboard-copy-txt" id="cell-30">df.groupby('FIRE_YEAR').FPA_ID.count().plot()</div>
 </div>
 </div>
 </div>
@@ -4926,7 +5304,7 @@ Name: FIRE_SIZE, dtype: float64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[31]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[29]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
 <pre>&lt;Axes: xlabel='FIRE_YEAR'&gt;</pre>
 </div>
@@ -4946,10 +5324,10 @@ Name: FIRE_SIZE, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [49]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-30">
+<clipboard-copy for="cell-31">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -4961,7 +5339,7 @@ Name: FIRE_SIZE, dtype: float64</pre>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">'FIRE_YEAR'</span><span class="p">,</span><span class="s1">'NWCG_CAUSE_CLASSIFICATION'</span><span class="p">])</span><span class="o">.</span><span class="n">FPA_ID</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span> <span class="o">=</span> <span class="s1">'bar'</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-30">df.groupby(['FIRE_YEAR','NWCG_CAUSE_CLASSIFICATION']).FPA_ID.count().plot(kind = 'bar')</div>
+<div class="clipboard-copy-txt" id="cell-31">df.groupby(['FIRE_YEAR','NWCG_CAUSE_CLASSIFICATION']).FPA_ID.count().plot(kind = 'bar')</div>
 </div>
 </div>
 </div>
@@ -4971,7 +5349,7 @@ Name: FIRE_SIZE, dtype: float64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[49]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[30]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
 <pre>&lt;Axes: xlabel='FIRE_YEAR,NWCG_CAUSE_CLASSIFICATION'&gt;</pre>
 </div>
@@ -4991,10 +5369,10 @@ Name: FIRE_SIZE, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [52]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [31]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-31">
+<clipboard-copy for="cell-32">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -5006,7 +5384,7 @@ Name: FIRE_SIZE, dtype: float64</pre>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">'FIRE_YEAR'</span><span class="p">,</span><span class="s1">'NWCG_CAUSE_CLASSIFICATION'</span><span class="p">])</span><span class="o">.</span><span class="n">FPA_ID</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">unstack</span><span class="p">(</span><span class="s1">'NWCG_CAUSE_CLASSIFICATION'</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span> <span class="o">=</span> <span class="s1">'bar'</span><span class="p">,</span> <span class="n">stacked</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-31">df.groupby(['FIRE_YEAR','NWCG_CAUSE_CLASSIFICATION']).FPA_ID.count().unstack('NWCG_CAUSE_CLASSIFICATION').plot(kind = 'bar', stacked = True)</div>
+<div class="clipboard-copy-txt" id="cell-32">df.groupby(['FIRE_YEAR','NWCG_CAUSE_CLASSIFICATION']).FPA_ID.count().unstack('NWCG_CAUSE_CLASSIFICATION').plot(kind = 'bar', stacked = True)</div>
 </div>
 </div>
 </div>
@@ -5016,7 +5394,7 @@ Name: FIRE_SIZE, dtype: float64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[52]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[31]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
 <pre>&lt;Axes: xlabel='FIRE_YEAR'&gt;</pre>
 </div>
@@ -5036,10 +5414,10 @@ Name: FIRE_SIZE, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [55]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [32]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-32">
+<clipboard-copy for="cell-33">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -5053,7 +5431,7 @@ Name: FIRE_SIZE, dtype: float64</pre>
 
 <span class="n">df_CA</span> <span class="o">=</span> <span class="n">gb</span><span class="o">.</span><span class="n">get_group</span><span class="p">(</span><span class="s1">'CA'</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-32">gb = df.groupby('STATE')
+<div class="clipboard-copy-txt" id="cell-33">gb = df.groupby('STATE')
 
 df_CA = gb.get_group('CA')</div>
 </div>
@@ -5067,10 +5445,10 @@ df_CA = gb.get_group('CA')</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [56]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [33]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-33">
+<clipboard-copy for="cell-34">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -5082,7 +5460,7 @@ df_CA = gb.get_group('CA')</div>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df_CA</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'FIRE_YEAR'</span><span class="p">)</span><span class="o">.</span><span class="n">FIRE_SIZE</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-33">df_CA.groupby('FIRE_YEAR').FIRE_SIZE.sum().plot()</div>
+<div class="clipboard-copy-txt" id="cell-34">df_CA.groupby('FIRE_YEAR').FIRE_SIZE.sum().plot()</div>
 </div>
 </div>
 </div>
@@ -5092,7 +5470,7 @@ df_CA = gb.get_group('CA')</div>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[56]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[33]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
 <pre>&lt;Axes: xlabel='FIRE_YEAR'&gt;</pre>
 </div>
@@ -5123,10 +5501,10 @@ df_CA = gb.get_group('CA')</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [57]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [34]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-34">
+<clipboard-copy for="cell-35">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -5139,7 +5517,7 @@ df_CA = gb.get_group('CA')</div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">gb</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">'STATE'</span><span class="p">,</span><span class="s1">'FIRE_YEAR'</span><span class="p">])</span>
 <span class="nb">len</span><span class="p">(</span><span class="n">gb</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-34">gb = df.groupby(['STATE','FIRE_YEAR'])
+<div class="clipboard-copy-txt" id="cell-35">gb = df.groupby(['STATE','FIRE_YEAR'])
 len(gb)</div>
 </div>
 </div>
@@ -5150,7 +5528,7 @@ len(gb)</div>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[57]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[34]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
 <pre>1231</pre>
 </div>
@@ -5164,10 +5542,10 @@ len(gb)</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [58]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [35]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-35">
+<clipboard-copy for="cell-36">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -5179,7 +5557,7 @@ len(gb)</div>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="nb">list</span><span class="p">(</span><span class="n">gb</span><span class="o">.</span><span class="n">groups</span><span class="o">.</span><span class="n">keys</span><span class="p">())[:</span><span class="mi">100</span><span class="p">:</span><span class="mi">10</span><span class="p">]</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-35">list(gb.groups.keys())[:100:10]</div>
+<div class="clipboard-copy-txt" id="cell-36">list(gb.groups.keys())[:100:10]</div>
 </div>
 </div>
 </div>
@@ -5189,7 +5567,7 @@ len(gb)</div>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[58]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[35]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
 <pre>[('AK', 1992),
  ('AK', 2002),
@@ -5212,10 +5590,10 @@ len(gb)</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [59]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [36]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-36">
+<clipboard-copy for="cell-37">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -5227,7 +5605,7 @@ len(gb)</div>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">gb</span><span class="o">.</span><span class="n">FIRE_SIZE</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-36">gb.FIRE_SIZE.sum()</div>
+<div class="clipboard-copy-txt" id="cell-37">gb.FIRE_SIZE.sum()</div>
 </div>
 </div>
 </div>
@@ -5237,7 +5615,7 @@ len(gb)</div>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[59]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[36]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
 <pre>STATE  FIRE_YEAR
 AK     1992         141007.000
@@ -5263,10 +5641,10 @@ Name: FIRE_SIZE, Length: 1231, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [60]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [37]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-37">
+<clipboard-copy for="cell-38">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -5279,7 +5657,7 @@ Name: FIRE_SIZE, Length: 1231, dtype: float64</pre>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1">### Select group with multiple index must use tuple!</span>
 <span class="n">gb</span><span class="o">.</span><span class="n">get_group</span><span class="p">((</span><span class="s1">'CA'</span><span class="p">,</span> <span class="mi">2003</span><span class="p">))</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-37">### Select group with multiple index must use tuple!
+<div class="clipboard-copy-txt" id="cell-38">### Select group with multiple index must use tuple!
 gb.get_group(('CA', 2003))</div>
 </div>
 </div>
@@ -5290,7 +5668,7 @@ gb.get_group(('CA', 2003))</div>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[60]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[37]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 <div>
 <style scoped="">
@@ -5637,10 +6015,10 @@ gb.get_group(('CA', 2003))</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [61]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [38]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-38">
+<clipboard-copy for="cell-39">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -5652,7 +6030,7 @@ gb.get_group(('CA', 2003))</div>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">gb</span><span class="o">.</span><span class="n">get_group</span><span class="p">((</span><span class="s1">'CA'</span><span class="p">,</span> <span class="mi">2003</span><span class="p">))</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-38">gb.get_group(('CA', 2003)).describe()</div>
+<div class="clipboard-copy-txt" id="cell-39">gb.get_group(('CA', 2003)).describe()</div>
 </div>
 </div>
 </div>
@@ -5662,7 +6040,7 @@ gb.get_group(('CA', 2003))</div>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[61]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[38]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 <div>
 <style scoped="">
@@ -5804,10 +6182,10 @@ gb.get_group(('CA', 2003))</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [67]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [39]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-39">
+<clipboard-copy for="cell-40">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -5820,7 +6198,7 @@ gb.get_group(('CA', 2003))</div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1">### Find out the largest fire in CA, 2020</span>
 <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">gb</span><span class="p">[</span><span class="s1">'FIRE_SIZE'</span><span class="p">]</span><span class="o">.</span><span class="n">idxmax</span><span class="p">()</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">'CA'</span><span class="p">,</span><span class="mi">2020</span><span class="p">]]</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-39">### Find out the largest fire in CA, 2020
+<div class="clipboard-copy-txt" id="cell-40">### Find out the largest fire in CA, 2020
 df.loc[gb['FIRE_SIZE'].idxmax().loc['CA',2020]]</div>
 </div>
 </div>
@@ -5831,7 +6209,7 @@ df.loc[gb['FIRE_SIZE'].idxmax().loc['CA',2020]]</div>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[67]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[39]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
 <pre>FPA_ID                           IRW-2020-CAMNF-000730
 SOURCE_SYSTEM_TYPE                           INTERAGCY
@@ -5886,10 +6264,10 @@ Name: 400629554, dtype: object</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [68]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [40]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-40">
+<clipboard-copy for="cell-41">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -5901,7 +6279,7 @@ Name: 400629554, dtype: object</pre>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'NWCG_GENERAL_CAUSE'</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span><span class="n">total_size</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'FIRE_SIZE'</span><span class="p">,</span> <span class="s1">'sum'</span><span class="p">))</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-40">
+<div class="clipboard-copy-txt" id="cell-41">
 df.groupby('NWCG_GENERAL_CAUSE').agg(total_size = ('FIRE_SIZE', 'sum'))</div>
 </div>
 </div>
@@ -5912,7 +6290,7 @@ df.groupby('NWCG_GENERAL_CAUSE').agg(total_size = ('FIRE_SIZE', 'sum'))</div>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[68]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[40]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 <div>
 <style scoped="">
@@ -6006,10 +6384,10 @@ df.groupby('NWCG_GENERAL_CAUSE').agg(total_size = ('FIRE_SIZE', 'sum'))</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [71]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [41]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-41">
+<clipboard-copy for="cell-42">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -6021,7 +6399,7 @@ df.groupby('NWCG_GENERAL_CAUSE').agg(total_size = ('FIRE_SIZE', 'sum'))</div>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'NWCG_GENERAL_CAUSE'</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span><span class="n">total_incidents</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'FPA_ID'</span><span class="p">,</span> <span class="s1">'count'</span><span class="p">))</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-41">df.groupby('NWCG_GENERAL_CAUSE').agg(total_incidents = ('FPA_ID', 'count'))</div>
+<div class="clipboard-copy-txt" id="cell-42">df.groupby('NWCG_GENERAL_CAUSE').agg(total_incidents = ('FPA_ID', 'count'))</div>
 </div>
 </div>
 </div>
@@ -6031,7 +6409,7 @@ df.groupby('NWCG_GENERAL_CAUSE').agg(total_size = ('FIRE_SIZE', 'sum'))</div>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[71]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[41]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 <div>
 <style scoped="">
@@ -6125,10 +6503,10 @@ df.groupby('NWCG_GENERAL_CAUSE').agg(total_size = ('FIRE_SIZE', 'sum'))</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [72]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [42]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-42">
+<clipboard-copy for="cell-43">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -6141,7 +6519,7 @@ df.groupby('NWCG_GENERAL_CAUSE').agg(total_size = ('FIRE_SIZE', 'sum'))</div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Applying different functions to dataframe columns</span>
 <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">'NWCG_GENERAL_CAUSE'</span><span class="p">])</span><span class="o">.</span><span class="n">agg</span><span class="p">({</span><span class="s1">'FIRE_SIZE'</span><span class="p">:</span><span class="s1">'sum'</span><span class="p">,</span> <span class="s1">'FPA_ID'</span><span class="p">:</span><span class="s1">'count'</span><span class="p">})</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-42"># Applying different functions to dataframe columns
+<div class="clipboard-copy-txt" id="cell-43"># Applying different functions to dataframe columns
 df.groupby(['NWCG_GENERAL_CAUSE']).agg({'FIRE_SIZE':'sum', 'FPA_ID':'count'})</div>
 </div>
 </div>
@@ -6152,7 +6530,7 @@ df.groupby(['NWCG_GENERAL_CAUSE']).agg({'FIRE_SIZE':'sum', 'FPA_ID':'count'})</d
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[72]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[42]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 <div>
 <style scoped="">
@@ -6272,10 +6650,10 @@ df.groupby(['NWCG_GENERAL_CAUSE']).agg({'FIRE_SIZE':'sum', 'FPA_ID':'count'})</d
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [79]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [43]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-43">
+<clipboard-copy for="cell-44">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -6288,7 +6666,7 @@ df.groupby(['NWCG_GENERAL_CAUSE']).agg({'FIRE_SIZE':'sum', 'FPA_ID':'count'})</d
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Take the 1st row from each group</span>
 <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">'FIRE_YEAR'</span><span class="p">])</span><span class="o">.</span><span class="n">nth</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-43"># Take the 1st row from each group
+<div class="clipboard-copy-txt" id="cell-44"># Take the 1st row from each group
 df.groupby(['FIRE_YEAR']).nth(10)</div>
 </div>
 </div>
@@ -6299,7 +6677,7 @@ df.groupby(['FIRE_YEAR']).nth(10)</div>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[79]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[43]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 <div>
 <style scoped="">
@@ -7081,7 +7459,7 @@ df.groupby(['FIRE_YEAR']).nth(10)</div>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-44">
+<clipboard-copy for="cell-45">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -7093,7 +7471,7 @@ df.groupby(['FIRE_YEAR']).nth(10)</div>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-44"></div>
+<div class="clipboard-copy-txt" id="cell-45"></div>
 </div>
 </div>
 </div>
@@ -7116,34 +7494,7 @@ df.groupby(['FIRE_YEAR']).nth(10)</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [80]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy for="cell-45">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'../Assignments/Assignment_3/Millbrook_NY_daily_weather.csv'</span><span class="p">)</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-45">df = pd.read_csv('../Assignments/Assignment_3/Millbrook_NY_daily_weather.csv')</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=70ef60ea-6274-4769-a23f-70658b33e5e7">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [81]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [44]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy for="cell-46">
@@ -7156,9 +7507,36 @@ df.groupby(['FIRE_YEAR']).nth(10)</div>
 </div>
 </clipboard-copy>
 </div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'../Assignments/Assignment_3/Millbrook_NY_daily_weather.csv'</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-46">df = pd.read_csv('../Assignments/Assignment_3/Millbrook_NY_daily_weather.csv')</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=70ef60ea-6274-4769-a23f-70658b33e5e7">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [45]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-47">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-46">df.head()</div>
+<div class="clipboard-copy-txt" id="cell-47">df.head()</div>
 </div>
 </div>
 </div>
@@ -7168,7 +7546,7 @@ df.groupby(['FIRE_YEAR']).nth(10)</div>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[81]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[45]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 <div>
 <style scoped="">
@@ -7347,10 +7725,10 @@ df.groupby(['FIRE_YEAR']).nth(10)</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [82]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [46]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-47">
+<clipboard-copy for="cell-48">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -7362,7 +7740,7 @@ df.groupby(['FIRE_YEAR']).nth(10)</div>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-47">df.describe()</div>
+<div class="clipboard-copy-txt" id="cell-48">df.describe()</div>
 </div>
 </div>
 </div>
@@ -7372,7 +7750,7 @@ df.groupby(['FIRE_YEAR']).nth(10)</div>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[82]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[46]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 <div>
 <style scoped="">
@@ -7623,10 +8001,10 @@ df.groupby(['FIRE_YEAR']).nth(10)</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [83]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [47]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-48">
+<clipboard-copy for="cell-49">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -7638,7 +8016,7 @@ df.groupby(['FIRE_YEAR']).nth(10)</div>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">columns</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-48">df.columns</div>
+<div class="clipboard-copy-txt" id="cell-49">df.columns</div>
 </div>
 </div>
 </div>
@@ -7648,7 +8026,7 @@ df.groupby(['FIRE_YEAR']).nth(10)</div>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[83]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[47]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
 <pre>Index(['LST_DATE', 'WBANNO', 'CRX_VN', 'LONGITUDE', 'LATITUDE', 'T_DAILY_MAX',
        'T_DAILY_MIN', 'T_DAILY_MEAN', 'T_DAILY_AVG', 'P_DAILY_CALC',
@@ -7671,34 +8049,7 @@ df.groupby(['FIRE_YEAR']).nth(10)</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [84]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy for="cell-49">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">'LST_DATE'</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'LST_DATE'</span><span class="p">])</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-49">df['LST_DATE'] = pd.to_datetime(df['LST_DATE'])</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=9bd87b0d-9dc5-4a48-bd2a-4b4c2d35bfc4">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [85]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [48]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy for="cell-50">
@@ -7711,21 +8062,21 @@ df.groupby(['FIRE_YEAR']).nth(10)</div>
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'SUR_TEMP_DAILY_TYPE'</span><span class="p">])</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">'LST_DATE'</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'LST_DATE'</span><span class="p">])</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-50">df = df.drop(columns = ['SUR_TEMP_DAILY_TYPE'])</div>
+<div class="clipboard-copy-txt" id="cell-50">df['LST_DATE'] = pd.to_datetime(df['LST_DATE'])</div>
 </div>
 </div>
 </div>
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=64582b10-279c-40a5-ac44-1ab9c381ea08">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=9bd87b0d-9dc5-4a48-bd2a-4b4c2d35bfc4">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [86]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [49]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy for="cell-51">
@@ -7738,21 +8089,21 @@ df.groupby(['FIRE_YEAR']).nth(10)</div>
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">'LST_DATE'</span><span class="p">)</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'SUR_TEMP_DAILY_TYPE'</span><span class="p">])</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-51">df = df.set_index('LST_DATE')</div>
+<div class="clipboard-copy-txt" id="cell-51">df = df.drop(columns = ['SUR_TEMP_DAILY_TYPE'])</div>
 </div>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=55429cdb-2a60-408a-947b-f135a107bf7c">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=64582b10-279c-40a5-ac44-1ab9c381ea08">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [87]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [50]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy for="cell-52">
@@ -7765,9 +8116,36 @@ df.groupby(['FIRE_YEAR']).nth(10)</div>
 </div>
 </clipboard-copy>
 </div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">'LST_DATE'</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-52">df = df.set_index('LST_DATE')</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=55429cdb-2a60-408a-947b-f135a107bf7c">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [51]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-53">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-52">df</div>
+<div class="clipboard-copy-txt" id="cell-53">df</div>
 </div>
 </div>
 </div>
@@ -7777,7 +8155,7 @@ df.groupby(['FIRE_YEAR']).nth(10)</div>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[87]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[51]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 <div>
 <style scoped="">
@@ -8135,10 +8513,10 @@ df.groupby(['FIRE_YEAR']).nth(10)</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [88]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [52]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-53">
+<clipboard-copy for="cell-54">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -8150,7 +8528,7 @@ df.groupby(['FIRE_YEAR']).nth(10)</div>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">T_DAILY_MEAN</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-53">df.T_DAILY_MEAN.plot()</div>
+<div class="clipboard-copy-txt" id="cell-54">df.T_DAILY_MEAN.plot()</div>
 </div>
 </div>
 </div>
@@ -8160,7 +8538,7 @@ df.groupby(['FIRE_YEAR']).nth(10)</div>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[88]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[52]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
 <pre>&lt;Axes: xlabel='LST_DATE'&gt;</pre>
 </div>
@@ -8191,10 +8569,10 @@ df.groupby(['FIRE_YEAR']).nth(10)</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [89]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [53]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-54">
+<clipboard-copy for="cell-55">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -8207,7 +8585,7 @@ df.groupby(['FIRE_YEAR']).nth(10)</div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">monthly_climatology</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">month</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">numeric_only</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">monthly_climatology</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-54">monthly_climatology = df.groupby(df.index.month).mean(numeric_only=True)
+<div class="clipboard-copy-txt" id="cell-55">monthly_climatology = df.groupby(df.index.month).mean(numeric_only=True)
 monthly_climatology</div>
 </div>
 </div>
@@ -8218,7 +8596,7 @@ monthly_climatology</div>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[89]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[53]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 <div>
 <style scoped="">
@@ -8601,10 +8979,10 @@ monthly_climatology</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [90]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [54]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-55">
+<clipboard-copy for="cell-56">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -8619,7 +8997,7 @@ monthly_climatology</div>
                                                               <span class="s1">'T_DAILY_MIN'</span><span class="p">:</span> <span class="s1">'min'</span><span class="p">})</span>
 <span class="n">monthly_T_climatology</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-55">monthly_T_climatology = df.groupby(df.index.month).aggregate({'T_DAILY_MEAN': 'mean',
+<div class="clipboard-copy-txt" id="cell-56">monthly_T_climatology = df.groupby(df.index.month).aggregate({'T_DAILY_MEAN': 'mean',
                                                               'T_DAILY_MAX': 'max',
                                                               'T_DAILY_MIN': 'min'})
 monthly_T_climatology</div>
@@ -8632,7 +9010,7 @@ monthly_T_climatology</div>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[90]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[54]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 <div>
 <style scoped="">
@@ -8750,10 +9128,10 @@ monthly_T_climatology</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [91]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [55]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-56">
+<clipboard-copy for="cell-57">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -8765,7 +9143,7 @@ monthly_T_climatology</div>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">monthly_T_climatology</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">marker</span><span class="o">=</span><span class="s1">'o'</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-56">monthly_T_climatology.plot(marker='o')</div>
+<div class="clipboard-copy-txt" id="cell-57">monthly_T_climatology.plot(marker='o')</div>
 </div>
 </div>
 </div>
@@ -8775,7 +9153,7 @@ monthly_T_climatology</div>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[91]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[55]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
 <pre>&lt;Axes: xlabel='LST_DATE'&gt;</pre>
 </div>
@@ -8806,10 +9184,10 @@ monthly_T_climatology</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [92]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [56]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-57">
+<clipboard-copy for="cell-58">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -8824,7 +9202,7 @@ monthly_T_climatology</div>
                                                             <span class="s1">'T_DAILY_MIN'</span><span class="p">:</span> <span class="s1">'min'</span><span class="p">})</span>
 <span class="n">daily_T_climatology</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">marker</span><span class="o">=</span><span class="s1">'.'</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-57">daily_T_climatology = df.groupby(df.index.dayofyear).aggregate({'T_DAILY_MEAN': 'mean',
+<div class="clipboard-copy-txt" id="cell-58">daily_T_climatology = df.groupby(df.index.dayofyear).aggregate({'T_DAILY_MEAN': 'mean',
                                                             'T_DAILY_MAX': 'max',
                                                             'T_DAILY_MIN': 'min'})
 daily_T_climatology.plot(marker='.')</div>
@@ -8837,7 +9215,7 @@ daily_T_climatology.plot(marker='.')</div>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[92]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[56]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
 <pre>&lt;Axes: xlabel='LST_DATE'&gt;</pre>
 </div>
@@ -8879,10 +9257,10 @@ daily_T_climatology.plot(marker='.')</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [93]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [57]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-58">
+<clipboard-copy for="cell-59">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -8897,7 +9275,7 @@ daily_T_climatology.plot(marker='.')</div>
 
 <span class="n">anomaly</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">month</span><span class="p">)</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">standardize</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-58">def standardize(x):
+<div class="clipboard-copy-txt" id="cell-59">def standardize(x):
     return (x - x.mean())/x.std()
 
 anomaly = df.groupby(df.index.month).transform(standardize)
@@ -8913,10 +9291,10 @@ anomaly = df.groupby(df.index.month).transform(standardize)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [94]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [58]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-59">
+<clipboard-copy for="cell-60">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -8928,7 +9306,7 @@ anomaly = df.groupby(df.index.month).transform(standardize)
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">anomaly</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="s1">'T_DAILY_MEAN'</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-59">anomaly.plot(y='T_DAILY_MEAN')</div>
+<div class="clipboard-copy-txt" id="cell-60">anomaly.plot(y='T_DAILY_MEAN')</div>
 </div>
 </div>
 </div>
@@ -8938,7 +9316,7 @@ anomaly = df.groupby(df.index.month).transform(standardize)
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[94]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[58]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
 <pre>&lt;Axes: xlabel='LST_DATE'&gt;</pre>
 </div>
@@ -8958,10 +9336,10 @@ anomaly = df.groupby(df.index.month).transform(standardize)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [95]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [59]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-60">
+<clipboard-copy for="cell-61">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -8973,7 +9351,7 @@ anomaly = df.groupby(df.index.month).transform(standardize)
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">anomaly</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-60">anomaly</div>
+<div class="clipboard-copy-txt" id="cell-61">anomaly</div>
 </div>
 </div>
 </div>
@@ -8983,7 +9361,7 @@ anomaly = df.groupby(df.index.month).transform(standardize)
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[95]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[59]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 <div>
 <style scoped="">
@@ -9330,10 +9708,10 @@ anomaly = df.groupby(df.index.month).transform(standardize)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [96]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [60]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-61">
+<clipboard-copy for="cell-62">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -9345,7 +9723,7 @@ anomaly = df.groupby(df.index.month).transform(standardize)
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">anomaly</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-61">anomaly</div>
+<div class="clipboard-copy-txt" id="cell-62">anomaly</div>
 </div>
 </div>
 </div>
@@ -9355,7 +9733,7 @@ anomaly = df.groupby(df.index.month).transform(standardize)
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[96]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[60]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 <div>
 <style scoped="">
@@ -9713,10 +10091,10 @@ anomaly = df.groupby(df.index.month).transform(standardize)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [97]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [61]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-62">
+<clipboard-copy for="cell-63">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -9728,7 +10106,7 @@ anomaly = df.groupby(df.index.month).transform(standardize)
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">month</span><span class="p">)</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="s1">'mean'</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-62">df.groupby(df.index.month).transform('mean')</div>
+<div class="clipboard-copy-txt" id="cell-63">df.groupby(df.index.month).transform('mean')</div>
 </div>
 </div>
 </div>
@@ -9738,7 +10116,7 @@ anomaly = df.groupby(df.index.month).transform(standardize)
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[97]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[61]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 <div>
 <style scoped="">
@@ -10085,10 +10463,10 @@ anomaly = df.groupby(df.index.month).transform(standardize)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [98]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [62]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-63">
+<clipboard-copy for="cell-64">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -10100,7 +10478,7 @@ anomaly = df.groupby(df.index.month).transform(standardize)
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">month</span><span class="p">)</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="s1">'mean'</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-63">df.groupby(df.index.month).apply('mean')</div>
+<div class="clipboard-copy-txt" id="cell-64">df.groupby(df.index.month).apply('mean')</div>
 </div>
 </div>
 </div>
@@ -10110,7 +10488,7 @@ anomaly = df.groupby(df.index.month).transform(standardize)
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[98]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[62]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 <div>
 <style scoped="">
@@ -10493,10 +10871,10 @@ anomaly = df.groupby(df.index.month).transform(standardize)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [100]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [63]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-64">
+<clipboard-copy for="cell-65">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -10508,7 +10886,7 @@ anomaly = df.groupby(df.index.month).transform(standardize)
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">'M'</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="s1">'T_DAILY_MEAN'</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">'o'</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-64">df.resample('M').mean().plot(y='T_DAILY_MEAN', marker='o')
+<div class="clipboard-copy-txt" id="cell-65">df.resample('M').mean().plot(y='T_DAILY_MEAN', marker='o')
 </div>
 </div>
 </div>
@@ -10519,7 +10897,7 @@ anomaly = df.groupby(df.index.month).transform(standardize)
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[100]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[63]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
 <pre>&lt;Axes: xlabel='LST_DATE'&gt;</pre>
 </div>
@@ -10550,10 +10928,10 @@ anomaly = df.groupby(df.index.month).transform(standardize)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [101]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [64]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-65">
+<clipboard-copy for="cell-66">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -10565,7 +10943,7 @@ anomaly = df.groupby(df.index.month).transform(standardize)
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">'M'</span><span class="p">)</span><span class="o">.</span><span class="n">max</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="s1">'T_DAILY_MAX'</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">'o'</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-65">df.resample('M').max().plot(y='T_DAILY_MAX', marker='o')
+<div class="clipboard-copy-txt" id="cell-66">df.resample('M').max().plot(y='T_DAILY_MAX', marker='o')
 </div>
 </div>
 </div>
@@ -10576,7 +10954,7 @@ anomaly = df.groupby(df.index.month).transform(standardize)
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[101]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[64]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
 <pre>&lt;Axes: xlabel='LST_DATE'&gt;</pre>
 </div>
@@ -10607,10 +10985,10 @@ anomaly = df.groupby(df.index.month).transform(standardize)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [102]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [65]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-66">
+<clipboard-copy for="cell-67">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -10623,7 +11001,7 @@ anomaly = df.groupby(df.index.month).transform(standardize)
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">rolling</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="n">center</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">T_DAILY_MEAN</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
 <span class="n">df</span><span class="o">.</span><span class="n">rolling</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="n">center</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">win_type</span><span class="o">=</span><span class="s1">'triang'</span><span class="p">)</span><span class="o">.</span><span class="n">T_DAILY_MEAN</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-66">df.rolling(30, center=True).T_DAILY_MEAN.mean().plot()
+<div class="clipboard-copy-txt" id="cell-67">df.rolling(30, center=True).T_DAILY_MEAN.mean().plot()
 df.rolling(30, center=True, win_type='triang').T_DAILY_MEAN.mean().plot()</div>
 </div>
 </div>
@@ -10634,7 +11012,7 @@ df.rolling(30, center=True, win_type='triang').T_DAILY_MEAN.mean().plot()</div>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[102]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[65]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
 <pre>&lt;Axes: xlabel='LST_DATE'&gt;</pre>
 </div>
@@ -10654,10 +11032,10 @@ df.rolling(30, center=True, win_type='triang').T_DAILY_MEAN.mean().plot()</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [103]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [66]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-67">
+<clipboard-copy for="cell-68">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -10669,7 +11047,7 @@ df.rolling(30, center=True, win_type='triang').T_DAILY_MEAN.mean().plot()</div>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">df</span><span class="o">.</span><span class="n">T_DAILY_MEAN</span><span class="o">.</span><span class="n">isnull</span><span class="p">())]</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-67">df.loc[(df.T_DAILY_MEAN.isnull())]</div>
+<div class="clipboard-copy-txt" id="cell-68">df.loc[(df.T_DAILY_MEAN.isnull())]</div>
 </div>
 </div>
 </div>
@@ -10679,7 +11057,7 @@ df.rolling(30, center=True, win_type='triang').T_DAILY_MEAN.mean().plot()</div>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[103]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[66]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 <div>
 <style scoped="">
@@ -11050,10 +11428,10 @@ df.rolling(30, center=True, win_type='triang').T_DAILY_MEAN.mean().plot()</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [104]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [67]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-68">
+<clipboard-copy for="cell-69">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -11065,7 +11443,7 @@ df.rolling(30, center=True, win_type='triang').T_DAILY_MEAN.mean().plot()</div>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">rolling</span><span class="p">(</span><span class="s1">'30D'</span><span class="p">,</span> <span class="n">center</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">T_DAILY_MEAN</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-68">df.rolling('30D', center=True).T_DAILY_MEAN.mean().plot()
+<div class="clipboard-copy-txt" id="cell-69">df.rolling('30D', center=True).T_DAILY_MEAN.mean().plot()
 </div>
 </div>
 </div>
@@ -11076,7 +11454,7 @@ df.rolling(30, center=True, win_type='triang').T_DAILY_MEAN.mean().plot()</div>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[104]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[67]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
 <pre>&lt;Axes: xlabel='LST_DATE'&gt;</pre>
 </div>
@@ -11096,34 +11474,7 @@ df.rolling(30, center=True, win_type='triang').T_DAILY_MEAN.mean().plot()</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [105]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy for="cell-69">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df_roll</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">rolling</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="n">center</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">T_DAILY_MEAN</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-69">df_roll = df.rolling(30, center=True).T_DAILY_MEAN.mean()</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=b14d10cd-e676-43b6-9849-dabc9e35847e">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [106]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [68]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy for="cell-70">
@@ -11136,9 +11487,36 @@ df.rolling(30, center=True, win_type='triang').T_DAILY_MEAN.mean().plot()</div>
 </div>
 </clipboard-copy>
 </div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df_roll</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">rolling</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="n">center</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">T_DAILY_MEAN</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-70">df_roll = df.rolling(30, center=True).T_DAILY_MEAN.mean()</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=b14d10cd-e676-43b6-9849-dabc9e35847e">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [69]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-71">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="nb">list</span><span class="p">(</span><span class="n">df_roll</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df_roll</span><span class="o">.</span><span class="n">isnull</span><span class="p">()]</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-70">list(df_roll.loc[df_roll.isnull()].index)</div>
+<div class="clipboard-copy-txt" id="cell-71">list(df_roll.loc[df_roll.isnull()].index)</div>
 </div>
 </div>
 </div>
@@ -11148,7 +11526,7 @@ df.rolling(30, center=True, win_type='triang').T_DAILY_MEAN.mean().plot()</div>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[106]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[69]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
 <pre>[Timestamp('2016-01-01 00:00:00'),
  Timestamp('2016-01-02 00:00:00'),
@@ -11387,10 +11765,10 @@ df.rolling(30, center=True, win_type='triang').T_DAILY_MEAN.mean().plot()</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [107]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [70]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-71">
+<clipboard-copy for="cell-72">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -11402,7 +11780,7 @@ df.rolling(30, center=True, win_type='triang').T_DAILY_MEAN.mean().plot()</div>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-71">df</div>
+<div class="clipboard-copy-txt" id="cell-72">df</div>
 </div>
 </div>
 </div>
@@ -11412,7 +11790,7 @@ df.rolling(30, center=True, win_type='triang').T_DAILY_MEAN.mean().plot()</div>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[107]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[70]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 <div>
 <style scoped="">
@@ -11759,34 +12137,7 @@ df.rolling(30, center=True, win_type='triang').T_DAILY_MEAN.mean().plot()</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [108]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy for="cell-72">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df_sub</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">'2017-01-01'</span><span class="p">:</span><span class="s1">'2017-12-31'</span><span class="p">]</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-72">df_sub = df.loc['2017-01-01':'2017-12-31']</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=c7573253-9760-42ef-8c1a-ef085a36d1e4">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [109]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [71]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy for="cell-73">
@@ -11799,9 +12150,36 @@ df.rolling(30, center=True, win_type='triang').T_DAILY_MEAN.mean().plot()</div>
 </div>
 </clipboard-copy>
 </div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df_sub</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">'2017-01-01'</span><span class="p">:</span><span class="s1">'2017-12-31'</span><span class="p">]</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-73">df_sub = df.loc['2017-01-01':'2017-12-31']</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=c7573253-9760-42ef-8c1a-ef085a36d1e4">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [72]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-74">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df_sub</span><span class="p">[</span><span class="s1">'SOIL_MOISTURE_10_DAILY'</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-73">df_sub['SOIL_MOISTURE_10_DAILY'].plot()</div>
+<div class="clipboard-copy-txt" id="cell-74">df_sub['SOIL_MOISTURE_10_DAILY'].plot()</div>
 </div>
 </div>
 </div>
@@ -11811,7 +12189,7 @@ df.rolling(30, center=True, win_type='triang').T_DAILY_MEAN.mean().plot()</div>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[109]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[72]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
 <pre>&lt;Axes: xlabel='LST_DATE'&gt;</pre>
 </div>
@@ -11831,10 +12209,10 @@ df.rolling(30, center=True, win_type='triang').T_DAILY_MEAN.mean().plot()</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [110]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [73]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-74">
+<clipboard-copy for="cell-75">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -11852,7 +12230,7 @@ df.rolling(30, center=True, win_type='triang').T_DAILY_MEAN.mean().plot()</div>
 
 <span class="n">df_sub</span><span class="o">.</span><span class="n">bfill</span><span class="p">()[</span><span class="s1">'SOIL_MOISTURE_10_DAILY'</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-74"># Fill values forward
+<div class="clipboard-copy-txt" id="cell-75"># Fill values forward
 
 df_sub.ffill()['SOIL_MOISTURE_10_DAILY'].plot()
 
@@ -11868,7 +12246,7 @@ df_sub.bfill()['SOIL_MOISTURE_10_DAILY'].plot()</div>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[110]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[73]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
 <pre>&lt;Axes: xlabel='LST_DATE'&gt;</pre>
 </div>
@@ -11888,10 +12266,10 @@ df_sub.bfill()['SOIL_MOISTURE_10_DAILY'].plot()</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [111]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [74]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-75">
+<clipboard-copy for="cell-76">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -11903,7 +12281,7 @@ df_sub.bfill()['SOIL_MOISTURE_10_DAILY'].plot()</div>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df_sub</span><span class="o">.</span><span class="n">columns</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-75">df_sub.columns</div>
+<div class="clipboard-copy-txt" id="cell-76">df_sub.columns</div>
 </div>
 </div>
 </div>
@@ -11913,7 +12291,7 @@ df_sub.bfill()['SOIL_MOISTURE_10_DAILY'].plot()</div>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[111]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[74]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
 <pre>Index(['WBANNO', 'CRX_VN', 'LONGITUDE', 'LATITUDE', 'T_DAILY_MAX',
        'T_DAILY_MIN', 'T_DAILY_MEAN', 'T_DAILY_AVG', 'P_DAILY_CALC',
@@ -11939,7 +12317,7 @@ df_sub.bfill()['SOIL_MOISTURE_10_DAILY'].plot()</div>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-76">
+<clipboard-copy for="cell-77">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -11951,7 +12329,7 @@ df_sub.bfill()['SOIL_MOISTURE_10_DAILY'].plot()</div>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-76"></div>
+<div class="clipboard-copy-txt" id="cell-77"></div>
 </div>
 </div>
 </div>
