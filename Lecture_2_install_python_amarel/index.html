@@ -299,9 +299,40 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Lecture 2 Install Python Environment
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Lecture 2 Install Python Environment
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#conda-alternative-mamba" class="md-nav__link">
+    Conda Alternative: Mamba
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -386,6 +417,20 @@
     <li class="md-nav__item">
       <a href="../Lecture_7_Pandas_Advanced/" class="md-nav__link">
         Lecture 7: Advaned Pandas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Lecture_8_Xarray/" class="md-nav__link">
+        Lecture 8: Xarray for multidimensional gridded data
       </a>
     </li>
   
@@ -497,6 +542,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Assignment_5/" class="md-nav__link">
+        Assignment 5 : Xarray
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -522,6 +581,21 @@
   
     
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#conda-alternative-mamba" class="md-nav__link">
+    Conda Alternative: Mamba
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -611,9 +685,44 @@ $ conda env create -f rcaes_environment.yml
     conda path: /projects/community/anaconda/2020.07/gc563 
     conda environment: rcaes_env
 </code></pre>
+<h2 id="conda-alternative-mamba">Conda Alternative: Mamba</h2>
 <ul>
-<li>To install Conda on your laptop, I recommend using <a href="https://docs.conda.io/projects/miniconda/en/latest/">Miniconda</a></li>
+<li>
+<p>If you find Conda super slow at solving the environment, I'd recommend you try using an alternative package manager <a href="https://mamba.readthedocs.io/en/latest/">Mamba</a>. </p>
+</li>
+<li>
+<p>Install <a href="https://github.com/conda-forge/miniforge">Miniforge</a> using: </p>
+</li>
 </ul>
+<pre><code>wget &quot;https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh&quot;
+bash Miniforge3-$(uname)-$(uname -m).sh
+</code></pre>
+<ul>
+<li>
+<p>Close and reopen the terminal window. </p>
+</li>
+<li>
+<p>Create a new environment <code>rcaes_env_new</code>: </p>
+</li>
+</ul>
+<pre><code>mamba create -n rcaes_env_new python=3.9 jupyter jupyterlab notebook numpy scipy ipython pandas matplotlib cartopy geopandas xarray dask netCDF4 bottleneck gh
+</code></pre>
+<ul>
+<li>
+<p>Next, go back to Amarel Open OnDemand. This time, we will launch a personal jupyter. Click on 'Interactive Apps', choose 'Personal Jupyter'. <br></p>
+</li>
+<li>
+<p>Settings for Personal Jupyter: <br></p>
+</li>
+</ul>
+<pre><code>    Number of hours: 10 
+    Number of cores: 1 
+    Gigabytes of memory: 10 
+    Partition: main
+    Leave Reservation and slurm feature blank 
+    conda path: /home/YOURNETID/miniforge3
+    conda environment: rcaes_env_new
+</code></pre>
 
 
 
