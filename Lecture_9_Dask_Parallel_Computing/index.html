@@ -1824,35 +1824,6 @@ This mode of operation is called "lazy"; it allows one to build up complex, larg
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=4a14b9cd-d3b0-4a87-975f-b2b7e3daa601">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy for="cell-1">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">warnings</span>
-<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s1">'ignore'</span><span class="p">)</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-1">import warnings
-warnings.filterwarnings('ignore')</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=14c053c7-4fa4-47bc-9989-a561153c0979">
 <div class="jp-Cell-inputWrapper">
@@ -1862,7 +1833,7 @@ warnings.filterwarnings('ignore')</div>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-2">
+<clipboard-copy for="cell-1">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -1877,7 +1848,7 @@ warnings.filterwarnings('ignore')</div>
 <span class="n">ones_np</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="n">shape</span><span class="p">)</span>
 <span class="n">ones_np</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-2">import numpy as np
+<div class="clipboard-copy-txt" id="cell-1">import numpy as np
 shape = (1000, 4000)
 ones_np = np.ones(shape)
 ones_np</div>
@@ -1924,7 +1895,7 @@ ones_np</div>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-3">
+<clipboard-copy for="cell-2">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -1936,7 +1907,7 @@ ones_np</div>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">ones_np</span><span class="o">.</span><span class="n">nbytes</span> <span class="o">/</span> <span class="mf">1e6</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-3">ones_np.nbytes / 1e6</div>
+<div class="clipboard-copy-txt" id="cell-2">ones_np.nbytes / 1e6</div>
 </div>
 </div>
 </div>
@@ -1974,7 +1945,7 @@ ones_np</div>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-4">
+<clipboard-copy for="cell-3">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -1988,7 +1959,7 @@ ones_np</div>
 <span class="kn">import</span> <span class="nn">dask.array</span> <span class="k">as</span> <span class="nn">da</span>
 <span class="n">ones</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="n">shape</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-4">import dask
+<div class="clipboard-copy-txt" id="cell-3">import dask
 import dask.array as da
 ones = da.ones(shape)</div>
 </div>
@@ -2005,7 +1976,7 @@ ones = da.ones(shape)</div>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-5">
+<clipboard-copy for="cell-4">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -2017,7 +1988,7 @@ ones = da.ones(shape)</div>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">ones</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-5">ones</div>
+<div class="clipboard-copy-txt" id="cell-4">ones</div>
 </div>
 </div>
 </div>
@@ -2093,7 +2064,7 @@ ones = da.ones(shape)</div>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-6">
+<clipboard-copy for="cell-5">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -2105,7 +2076,7 @@ ones = da.ones(shape)</div>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">ones</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">100</span><span class="p">,</span><span class="mi">1000</span><span class="p">,</span><span class="mi">1000</span><span class="p">))</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-6">ones = da.ones((100,1000,1000))</div>
+<div class="clipboard-copy-txt" id="cell-5">ones = da.ones((100,1000,1000))</div>
 </div>
 </div>
 </div>
@@ -2120,7 +2091,7 @@ ones = da.ones(shape)</div>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-7">
+<clipboard-copy for="cell-6">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -2133,7 +2104,7 @@ ones = da.ones(shape)</div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Dask will determine an optimal chunk size. </span>
 <span class="n">ones</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-7"># Dask will determine an optimal chunk size. 
+<div class="clipboard-copy-txt" id="cell-6"># Dask will determine an optimal chunk size. 
 ones</div>
 </div>
 </div>
@@ -2248,7 +2219,7 @@ In this lecture, we will use a block shape.</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-8">
+<clipboard-copy for="cell-7">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -2263,7 +2234,7 @@ In this lecture, we will use a block shape.</p>
 <span class="n">ones</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="n">shape</span><span class="p">,</span> <span class="n">chunks</span><span class="o">=</span><span class="n">chunk_shape</span><span class="p">)</span>
 <span class="n">ones</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-8">chunk_shape = (1000, 1000)
+<div class="clipboard-copy-txt" id="cell-7">chunk_shape = (1000, 1000)
 shape = (1000, 4000)
 ones = da.ones(shape, chunks=chunk_shape)
 ones</div>
@@ -2345,7 +2316,7 @@ ones</div>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-9">
+<clipboard-copy for="cell-8">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -2357,7 +2328,7 @@ ones</div>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">ones</span><span class="o">.</span><span class="n">chunksize</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-9">ones.chunksize</div>
+<div class="clipboard-copy-txt" id="cell-8">ones.chunksize</div>
 </div>
 </div>
 </div>
@@ -2397,7 +2368,7 @@ When we call <code>.compute()</code> on a dask array, the computation is trigger
 <div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-10">
+<clipboard-copy for="cell-9">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -2409,7 +2380,7 @@ When we call <code>.compute()</code> on a dask array, the computation is trigger
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">ones</span><span class="o">.</span><span class="n">compute</span><span class="p">()</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-10">ones.compute()</div>
+<div class="clipboard-copy-txt" id="cell-9">ones.compute()</div>
 </div>
 </div>
 </div>
@@ -2453,7 +2424,7 @@ When we call <code>.compute()</code> on a dask array, the computation is trigger
 <div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-11">
+<clipboard-copy for="cell-10">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -2465,7 +2436,7 @@ When we call <code>.compute()</code> on a dask array, the computation is trigger
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Install graphviz: mamba install -c conda-forge python-graphviz graphviz</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-11"># Install graphviz: mamba install -c conda-forge python-graphviz graphviz</div>
+<div class="clipboard-copy-txt" id="cell-10"># Install graphviz: mamba install -c conda-forge python-graphviz graphviz</div>
 </div>
 </div>
 </div>
@@ -2480,7 +2451,7 @@ When we call <code>.compute()</code> on a dask array, the computation is trigger
 <div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-12">
+<clipboard-copy for="cell-11">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -2492,7 +2463,7 @@ When we call <code>.compute()</code> on a dask array, the computation is trigger
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">ones</span><span class="o">.</span><span class="n">visualize</span><span class="p">()</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-12">ones.visualize()</div>
+<div class="clipboard-copy-txt" id="cell-11">ones.visualize()</div>
 </div>
 </div>
 </div>
@@ -2531,7 +2502,7 @@ When we call <code>.compute()</code> on a dask array, the computation is trigger
 <div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-13">
+<clipboard-copy for="cell-12">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -2544,7 +2515,7 @@ When we call <code>.compute()</code> on a dask array, the computation is trigger
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">sum_of_ones</span> <span class="o">=</span> <span class="n">ones</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 <span class="n">sum_of_ones</span><span class="o">.</span><span class="n">visualize</span><span class="p">()</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-13">sum_of_ones = ones.sum()
+<div class="clipboard-copy-txt" id="cell-12">sum_of_ones = ones.sum()
 sum_of_ones.visualize()</div>
 </div>
 </div>
@@ -2584,7 +2555,7 @@ sum_of_ones.visualize()</div>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-14">
+<clipboard-copy for="cell-13">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -2597,7 +2568,7 @@ sum_of_ones.visualize()</div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">fancy_calculation</span> <span class="o">=</span> <span class="p">(</span><span class="n">ones</span> <span class="o">*</span> <span class="n">ones</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="p">::</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 <span class="n">fancy_calculation</span><span class="o">.</span><span class="n">visualize</span><span class="p">()</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-14">fancy_calculation = (ones * ones[::-1, ::-1]).mean()
+<div class="clipboard-copy-txt" id="cell-13">fancy_calculation = (ones * ones[::-1, ::-1]).mean()
 fancy_calculation.visualize()</div>
 </div>
 </div>
@@ -2637,7 +2608,7 @@ fancy_calculation.visualize()</div>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-15">
+<clipboard-copy for="cell-14">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -2651,7 +2622,7 @@ fancy_calculation.visualize()</div>
 <span class="n">big_ones</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="n">bigshape</span><span class="p">,</span> <span class="n">chunks</span><span class="o">=</span><span class="n">chunk_shape</span><span class="p">)</span>
 <span class="n">big_ones</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-15">bigshape = (200000, 4000)
+<div class="clipboard-copy-txt" id="cell-14">bigshape = (200000, 4000)
 big_ones = da.ones(bigshape, chunks=chunk_shape)
 big_ones</div>
 </div>
@@ -2750,7 +2721,7 @@ big_ones</div>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-16">
+<clipboard-copy for="cell-15">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -2762,7 +2733,7 @@ big_ones</div>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">big_ones</span><span class="o">.</span><span class="n">nbytes</span> <span class="o">/</span> <span class="mf">1e6</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-16">big_ones.nbytes / 1e6</div>
+<div class="clipboard-copy-txt" id="cell-15">big_ones.nbytes / 1e6</div>
 </div>
 </div>
 </div>
@@ -2802,7 +2773,7 @@ big_ones</div>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-17">
+<clipboard-copy for="cell-16">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -2820,7 +2791,7 @@ big_ones</div>
     <span class="n">result</span> <span class="o">=</span> <span class="n">big_calc</span><span class="o">.</span><span class="n">compute</span><span class="p">()</span>
 <span class="n">result</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-17">from dask.diagnostics import ProgressBar
+<div class="clipboard-copy-txt" id="cell-16">from dask.diagnostics import ProgressBar
 
 big_calc = (big_ones * big_ones[::-1, ::-1]).mean()
 
@@ -2872,7 +2843,7 @@ You can also apply numpy function directly to a dask array, and it will stay laz
 <div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-18">
+<clipboard-copy for="cell-17">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -2885,7 +2856,7 @@ You can also apply numpy function directly to a dask array, and it will stay laz
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">big_ones_reduce</span> <span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">big_ones</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 <span class="n">big_ones_reduce</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-18">big_ones_reduce = (np.cos(big_ones)**2).mean(axis=0)
+<div class="clipboard-copy-txt" id="cell-17">big_ones_reduce = (np.cos(big_ones)**2).mean(axis=0)
 big_ones_reduce</div>
 </div>
 </div>
@@ -2976,7 +2947,7 @@ big_ones_reduce</div>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-19">
+<clipboard-copy for="cell-18">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -2988,7 +2959,7 @@ big_ones_reduce</div>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-19">from matplotlib import pyplot as plt</div>
+<div class="clipboard-copy-txt" id="cell-18">from matplotlib import pyplot as plt</div>
 </div>
 </div>
 </div>
@@ -3003,7 +2974,7 @@ big_ones_reduce</div>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-20">
+<clipboard-copy for="cell-19">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -3015,7 +2986,7 @@ big_ones_reduce</div>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">big_ones_reduce</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-20">plt.plot(big_ones_reduce)</div>
+<div class="clipboard-copy-txt" id="cell-19">plt.plot(big_ones_reduce)</div>
 </div>
 </div>
 </div>
@@ -3059,7 +3030,7 @@ big_ones_reduce</div>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-21">
+<clipboard-copy for="cell-20">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -3072,7 +3043,7 @@ big_ones_reduce</div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">xarray</span> <span class="k">as</span> <span class="nn">xr</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-21">import numpy as np
+<div class="clipboard-copy-txt" id="cell-20">import numpy as np
 import xarray as xr
 </div>
 </div>
@@ -3089,7 +3060,7 @@ import xarray as xr
 <div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-22">
+<clipboard-copy for="cell-21">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -3101,7 +3072,7 @@ import xarray as xr
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">tutorial</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="s2">"air_temperature"</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-22">ds = xr.tutorial.open_dataset("air_temperature")</div>
+<div class="clipboard-copy-txt" id="cell-21">ds = xr.tutorial.open_dataset("air_temperature")</div>
 </div>
 </div>
 </div>
@@ -3116,7 +3087,7 @@ import xarray as xr
 <div class="jp-InputPrompt jp-InputArea-prompt">In [31]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-23">
+<clipboard-copy for="cell-22">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -3136,7 +3107,7 @@ import xarray as xr
 <span class="p">)</span>
 <span class="n">ds</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-23">ds = xr.tutorial.open_dataset(
+<div class="clipboard-copy-txt" id="cell-22">ds = xr.tutorial.open_dataset(
     "air_temperature",
     chunks={  # this tells xarray to open the dataset as a dask array
         "lat": "auto",
@@ -3667,7 +3638,7 @@ Use `to_numpy` or `as_numpy` instead of `.values` so that your code generalizes 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [32]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-24">
+<clipboard-copy for="cell-23">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -3679,7 +3650,7 @@ Use `to_numpy` or `as_numpy` instead of `.values` so that your code generalizes 
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">ds</span><span class="o">.</span><span class="n">air</span><span class="o">.</span><span class="n">data</span>  <span class="c1"># dask array, not numpy</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-24">ds.air.data  # dask array, not numpy</div>
+<div class="clipboard-copy-txt" id="cell-23">ds.air.data  # dask array, not numpy</div>
 </div>
 </div>
 </div>
@@ -3776,7 +3747,7 @@ Use `to_numpy` or `as_numpy` instead of `.values` so that your code generalizes 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [33]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-25">
+<clipboard-copy for="cell-24">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -3788,7 +3759,7 @@ Use `to_numpy` or `as_numpy` instead of `.values` so that your code generalizes 
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">ds</span><span class="o">.</span><span class="n">air</span><span class="o">.</span><span class="n">as_numpy</span><span class="p">()</span><span class="o">.</span><span class="n">data</span>  <span class="c1">## numpy array</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-25">ds.air.as_numpy().data  ## numpy array</div>
+<div class="clipboard-copy-txt" id="cell-24">ds.air.as_numpy().data  ## numpy array</div>
 </div>
 </div>
 </div>
@@ -3913,7 +3884,7 @@ Try calling `ds.air.values` and `ds.air.data`. Do you understand the difference?
 <div class="jp-InputPrompt jp-InputArea-prompt">In [34]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-26">
+<clipboard-copy for="cell-25">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -3925,7 +3896,7 @@ Try calling `ds.air.values` and `ds.air.data`. Do you understand the difference?
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">ds</span><span class="o">.</span><span class="n">air</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">()</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-26">ds.air.to_numpy()</div>
+<div class="clipboard-copy-txt" id="cell-25">ds.air.to_numpy()</div>
 </div>
 </div>
 </div>
@@ -4049,7 +4020,7 @@ requested.</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [35]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-27">
+<clipboard-copy for="cell-26">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -4062,7 +4033,7 @@ requested.</p>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">mean</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">air</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="s2">"time"</span><span class="p">)</span>
 <span class="n">mean</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-27">mean = ds.air.mean("time")
+<div class="clipboard-copy-txt" id="cell-26">mean = ds.air.mean("time")
 mean</div>
 </div>
 </div>
@@ -4533,7 +4504,7 @@ Coordinates:
 <div class="jp-InputPrompt jp-InputArea-prompt">In [36]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-28">
+<clipboard-copy for="cell-27">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -4545,7 +4516,7 @@ Coordinates:
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">mean</span><span class="o">.</span><span class="n">data</span>  <span class="c1"># dask array</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-28">mean.data  # dask array</div>
+<div class="clipboard-copy-txt" id="cell-27">mean.data  # dask array</div>
 </div>
 </div>
 </div>
@@ -4621,7 +4592,7 @@ Coordinates:
 <div class="jp-InputPrompt jp-InputArea-prompt">In [37]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-29">
+<clipboard-copy for="cell-28">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -4635,7 +4606,7 @@ Coordinates:
 <span class="c1"># we ask it to visualize the graph from left to right because it looks nicer</span>
 <span class="n">dask</span><span class="o">.</span><span class="n">visualize</span><span class="p">(</span><span class="n">mean</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">rankdir</span><span class="o">=</span><span class="s2">"LR"</span><span class="p">,</span> <span class="n">optimize_graph</span> <span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-29"># visualize the graph for the underlying dask array
+<div class="clipboard-copy-txt" id="cell-28"># visualize the graph for the underlying dask array
 # we ask it to visualize the graph from left to right because it looks nicer
 dask.visualize(mean.data, rankdir="LR", optimize_graph =True)</div>
 </div>
@@ -4681,7 +4652,7 @@ This is equivalent to <code>ds = ds.compute()</code></li>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [38]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-30">
+<clipboard-copy for="cell-29">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -4693,7 +4664,7 @@ This is equivalent to <code>ds = ds.compute()</code></li>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">ds</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-30">ds.load()</div>
+<div class="clipboard-copy-txt" id="cell-29">ds.load()</div>
 </div>
 </div>
 </div>
@@ -5178,7 +5149,7 @@ Attributes:
 <div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-31">
+<clipboard-copy for="cell-30">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -5190,7 +5161,7 @@ Attributes:
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">ds_multiple</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_mfdataset</span><span class="p">(</span><span class="s1">'/scratch/xj103/rcaes/GEOS_Chem_Sims/GEOSChem.SpeciesConcHourlyNO2.2020*_2100z.nc4'</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-31">ds_multiple = xr.open_mfdataset('/scratch/xj103/rcaes/GEOS_Chem_Sims/GEOSChem.SpeciesConcHourlyNO2.2020*_2100z.nc4')
+<div class="clipboard-copy-txt" id="cell-30">ds_multiple = xr.open_mfdataset('/scratch/xj103/rcaes/GEOS_Chem_Sims/GEOSChem.SpeciesConcHourlyNO2.2020*_2100z.nc4')
 
 </div>
 </div>
@@ -5207,7 +5178,7 @@ Attributes:
 <div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-32">
+<clipboard-copy for="cell-31">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -5219,7 +5190,7 @@ Attributes:
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">ds_multiple</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-32">ds_multiple</div>
+<div class="clipboard-copy-txt" id="cell-31">ds_multiple</div>
 </div>
 </div>
 </div>
@@ -5816,7 +5787,7 @@ Data variables:
 <div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-33">
+<clipboard-copy for="cell-32">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -5828,7 +5799,7 @@ Data variables:
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="o">%</span><span class="n">time</span> <span class="n">ds_multiple</span><span class="o">.</span><span class="n">SpeciesConc_NO2</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">dim</span> <span class="o">=</span> <span class="s1">'time'</span><span class="p">)</span><span class="o">.</span><span class="n">compute</span><span class="p">()</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-33">%time ds_multiple.SpeciesConc_NO2.mean(dim = 'time').compute()</div>
+<div class="clipboard-copy-txt" id="cell-32">%time ds_multiple.SpeciesConc_NO2.mean(dim = 'time').compute()</div>
 </div>
 </div>
 </div>
@@ -6374,7 +6345,7 @@ Coordinates:
 <div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-34">
+<clipboard-copy for="cell-33">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -6387,7 +6358,7 @@ Coordinates:
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">rolling_mean</span> <span class="o">=</span> <span class="n">ds_multiple</span><span class="o">.</span><span class="n">SpeciesConc_NO2</span><span class="o">.</span><span class="n">rolling</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>  
 <span class="n">rolling_mean</span>  <span class="c1"># contains dask array</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-34">rolling_mean = ds_multiple.SpeciesConc_NO2.rolling(time=5).mean()  
+<div class="clipboard-copy-txt" id="cell-33">rolling_mean = ds_multiple.SpeciesConc_NO2.rolling(time=5).mean()  
 rolling_mean  # contains dask array</div>
 </div>
 </div>
@@ -6963,7 +6934,7 @@ Attributes:
 <div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-35">
+<clipboard-copy for="cell-34">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -6976,7 +6947,7 @@ Attributes:
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">computed</span> <span class="o">=</span> <span class="n">rolling_mean</span><span class="o">.</span><span class="n">compute</span><span class="p">()</span>  
 <span class="n">computed</span>  <span class="c1"># has real numpy values</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-35">computed = rolling_mean.compute()  
+<div class="clipboard-copy-txt" id="cell-34">computed = rolling_mean.compute()  
 computed  # has real numpy values</div>
 </div>
 </div>
@@ -7550,7 +7521,7 @@ Attributes:
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-36">
+<clipboard-copy for="cell-35">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -7562,7 +7533,7 @@ Attributes:
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-36"></div>
+<div class="clipboard-copy-txt" id="cell-35"></div>
 </div>
 </div>
 </div>
